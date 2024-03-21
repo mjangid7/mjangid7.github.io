@@ -67,12 +67,27 @@
         .skills {
             margin-top: 20px;
         }
+
+        /* Style for images */
+        .profile-img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        .project-img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 
 <body>
 
     <header>
+        <img src="profile_picture.jpg" alt="Profile Picture" class="profile-img">
         <h1>Mukund Jangid - Portfolio</h1>
     </header>
 
@@ -105,12 +120,12 @@
             <p>
                 Dec’ 21 to Present<br>
                 Albert Invent - 469 9th St Suite 100B, Oakland, CA 94607, United States<br>
-                <ul>
-                    <li>Acting as a builder to revolutionize the chemical industry with a world-class SaaS Platform.</li>
-                    <li>Designed scalable microservice applications.</li>
-                    <li>Worked with customers daily to understand requirements and deliver features.</li>
-                </ul>
-                Business or sector: Product - Chemical Industry SaaS Platform
+            <ul>
+                <li>Acting as a builder to revolutionize the chemical industry with a world-class SaaS Platform.</li>
+                <li>Designed scalable microservice applications.</li>
+                <li>Worked with customers daily to understand requirements and deliver features.</li>
+            </ul>
+            Business or sector: Product - Chemical Industry SaaS Platform
             </p>
         </div>
         <div>
@@ -118,11 +133,12 @@
             <p>
                 June’ 20 to Dec’ 21<br>
                 Lifebit Biotech - 9th Floor, 9 Appold St, London EC2A 2AP, United Kingdom<br>
-                <ul>
-                    <li>Contributed to building a customer-facing, government-backed platform for Genomic and Biotech solutions.</li>
-                    <li>Enhanced performance and converted monolithic to microservices solutions.</li>
-                </ul>
-                Business or sector: Product - Biotechnology & Genomics
+            <ul>
+                <li>Contributed to building a customer-facing, government-backed platform for Genomic and Biotech
+                    solutions.</li>
+                <li>Enhanced performance and converted monolithic to microservices solutions.</li>
+            </ul>
+            Business or sector: Product - Biotechnology & Genomics
             </p>
         </div>
         <div>
@@ -130,12 +146,12 @@
             <p>
                 June’ 20 to Dec’ 21<br>
                 Dassault Systèmes - Pune, Maharashtra, India<br>
-                <ul>
-                    <li>Contributed to building a Sensor Platform for Clinical Trials.</li>
-                    <li>Worked with enterprise customers to integrate medical sensors with cloud platforms.</li>
-                    <li>Integrated the product with other Medidata and Dassault Products.</li>
-                </ul>
-                Business or sector: Product - Life Sciences and Clinical Trials
+            <ul>
+                <li>Contributed to building a Sensor Platform for Clinical Trials.</li>
+                <li>Worked with enterprise customers to integrate medical sensors with cloud platforms.</li>
+                <li>Integrated the product with other Medidata and Dassault Products.</li>
+            </ul>
+            Business or sector: Product - Life Sciences and Clinical Trials
             </p>
         </div>
         <div>
@@ -143,43 +159,18 @@
             <p>
                 May’ 17 to June’ 20<br>
                 Capgemini – Pune, Maharashtra, India<br>
-                <ul>
-                    <li>Delivered CCPA (California Consumer Privacy Act) Financial Compliance and Auditing tool.</li>
-                    <li>Delivered Data Compliance and Governance leaders to ensure data security and isolation.</li>
-                    <li>Migrated Legacy database to Distributed systems with support for visualization and analytics.</li>
-                </ul>
-                Business or sector: Morgan Stanley- Wealth Management Consultant
+            <ul>
+                <li>Delivered CCPA (California Consumer Privacy Act) Financial Compliance and Auditing tool.</li>
+                <li>Delivered Data Compliance and Governance leaders to ensure data security and isolation.</li>
+                <li>Migrated Legacy database to Distributed systems with support for visualization and analytics.</li>
+            </ul>
+            Business or sector: Morgan Stanley- Wealth Management Consultant
             </p>
         </div>
     </section>
 
     <section id="skills" class="skills">
         <h2>Professional Skills</h2>
-        <h3>Languages</h3>
-        <p>
-            English: Proficient (Listening, Reading, Spoken interaction, Spoken production, Writing)<br>
-            German: Entry Level (Listening, Reading, Spoken interaction, Spoken production, Writing)
-        </p>
-        <h3>Communication skills</h3>
-        <p>
-            Well-versed in building positive relationships with customers and other stakeholders.<br>
-            Strong requirements gathering, scope development, and inventory coordination abilities.<br>
-            Skilled at overseeing complex, high-value technical projects with excellent planning competencies.
-        </p>
-        <h3>Organisational / managerial skills</h3>
-        <p>
-            Proven success in product roadmap development, market research, and data analysis.<br>
-            Highly skilled in identifying opportunities to maximize revenue.<br>
-            Driven and strategic with a proven history of superior market penetration and product launch with niche features and projections.
-        </p>
-        <h3>Job-related skills</h3>
-        <p>
-            Complex problem-solver with an analytical and driven mindset.<br>
-            Dedicated to achieving demanding development objectives according to tight timelines while producing impeccable code.<br>
-            Seasoned Product owner experienced in developing applications, databases, and cloud computing solutions. Smart professional with proven troubleshooting and debugging capabilities for resolving complex technical issues.
-        </p>
-        <h3>Professional skills</h3>
-        <h3>Professional skills</h3>
         <p><strong>SELF-ASSESSMENT</strong></p>
         <ul>
             <li>Software Development/Programming: Proficient</li>
@@ -192,16 +183,23 @@
         <p>Levels: Basic user - Independent user - Proficient user</p>
         <p><strong>Various Certifications in Software Development and Product Engineering:</strong></p>
         <ul>
-            <li>Good command and engagement in the development, creation, and maintenance of software solutions, scalable production environments, staging and testing procedures.</li>
-            <li>Explored all aspects of software engineering consisting of API development, UI/UX design, CI/CD deployments, and cloud infrastructure.</li>
-            <li>Well-versed with the technical and requirement complexities with prompt and designed solutions.</li>
-            <li>Programming: JavaScript, TypeScript, React, Node, NextJS, GraphQL, Design Patterns.</li>
-            <li>Cloud Computing: AWS, Kubernetes, Docker, Serverless, Fargate, Azure Bot Framework.</li>
-            <li>Databases: Postgres, MySQL, Cassandra, Redis, DynamoDB.</li>
-            <li>Tools: VSCode, Git Town, Codacy, TravisCI, CircleCI, GoCD, GitGuardian, Postman, JIRA.</li>
-            <li>Data Engineering: Kafka, Flink, Spark, Liquibase, Confluent, Schema-Stitching.</li>
-            <li>Machine Learning: Feature Extraction, Model Evaluation, Clustering.</li>
-        </ul>
+            <li>Good command and engagement in the development, creation, and maintenance of software solutions,
+                scalable production environments, staging and testing procedures.</li>
+            <li>Explored all aspects of software engineering consisting of API development, UI/
+                <ul>
+                    <li>Good command and engagement in the development, creation, and maintenance of software solutions,
+                        scalable production environments, staging and testing procedures.</li>
+                    <li>Explored all aspects of software engineering consisting of API development, UI/UX design, CI/CD
+                        deployments, and cloud infrastructure.</li>
+                    <li>Well-versed with the technical and requirement complexities with prompt and designed solutions.
+                    </li>
+                    <li>Programming: JavaScript, TypeScript, React, Node, NextJS, GraphQL, Design Patterns.</li>
+                    <li>Cloud Computing: AWS, Kubernetes, Docker, Serverless, Fargate, Azure Bot Framework.</li>
+                    <li>Databases: Postgres, MySQL, Cassandra, Redis, DynamoDB.</li>
+                    <li>Tools: VSCode, Git Town, Codacy, TravisCI, CircleCI, GoCD, GitGuardian, Postman, JIRA.</li>
+                    <li>Data Engineering: Kafka, Flink, Spark, Liquibase, Confluent, Schema-Stitching.</li>
+                    <li>Machine Learning: Feature Extraction, Model Evaluation, Clustering.</li>
+                </ul>
     </section>
 
     <section id="contact" class="contact-info">
