@@ -10,17 +10,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobiwave/simplefolio"
+    "url": "git+https://github.com/mjangid7/mjangid7.portfolio.io"
   },
   "keywords": [],
-  "author": "Jacobo Martinez",
+  "author": "Mukund Jangid",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cobiwave/simplefolio/issues"
   },
-  "homepage": "https://github.com/cobiwave/simplefolio#readme",
+  "homepage": "https://github.com/mjangid7",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.8.2",
     "parcel": "^2.8.2",
     "prettier": "^2.8.1"
   },
