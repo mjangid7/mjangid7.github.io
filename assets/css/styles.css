@@ -1478,6 +1478,72 @@ p {
     }
 }
 
+/* Calendar Button Styles */
+.calendar-link {
+    margin-right: var(--space-3);
+}
+
+.btn-sm {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--fs-sm);
+    min-height: 36px;
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--border-light);
+    backdrop-filter: blur(10px);
+}
+
+.btn-outline:hover {
+    background: var(--card-bg-hover);
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
+}
+
+/* Footer Updates */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-6);
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--space-4);
+}
+
+.footer-cta {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-4);
+    }
+    
+    .footer-right {
+        align-items: center;
+    }
+    
+    .calendar-link span {
+        display: none;
+    }
+    
+    .calendar-link {
+        width: 36px;
+        padding: var(--space-2);
+    }
+}
+
 /* Companies Section */
 .companies-section {
     padding: var(--space-12) 0;
