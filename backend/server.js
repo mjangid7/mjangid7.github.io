@@ -86,8 +86,12 @@ app.post('/api/visits', async (req, res) => {
             isNewSession
         };
 
-        // Store individual visit
-        await redisClient.hSet(`visit:${visitId}`, visitData);
+        // Store individual visit (ensure all values are strings)
+        const serializedVisitData = {};
+        for (const [key, value] of Object.entries(visitData)) {
+            serializedVisitData[key] = value !== null && value !== undefined ? String(value) : '';
+        }
+        await redisClient.hSet(`visit:${visitId}`, serializedVisitData);
 
         // Update analytics counters
         await redisClient.incr('analytics:total_visits');
