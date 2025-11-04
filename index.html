@@ -8,6 +8,7 @@
     <meta name="author" content="Mukund Jangid">
     <meta name="keywords" content="technical product manager, AI strategist, platform engineering, DevOps, full stack developer">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/modal-popups.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -225,7 +226,7 @@
         <!-- Companies Section -->
         <section class="companies-section" aria-labelledby="companies-heading">
             <div class="container">
-                <h2 id="companies-heading" class="companies-text">Trusted by leading organizations</h2>
+                <h2 id="companies-heading" class="companies-text">Contributed to Elite set of leading organizations</h2>
                 <div class="companies-logos" role="list" aria-label="Companies I have worked with">
                     <a href="https://www.vertexinc.com" 
                        target="_blank" 
@@ -345,7 +346,10 @@
             <div class="about-details">
                 <div class="about-grid">
                     <div class="about-column">
-                        <h3><i class="fas fa-target"></i> What I Do</h3>
+                        <h3 class="clickable-section" data-modal="what-i-do">
+                            <i class="fas fa-target"></i> What I Do
+                            <i class="fas fa-expand-alt section-expand-icon" aria-hidden="true"></i>
+                        </h3>
                         <div class="about-items">
                             <div class="about-item">
                                 <div class="item-icon">
@@ -378,7 +382,10 @@
                     </div>
 
                     <div class="about-column">
-                        <h3><i class="fas fa-lightbulb"></i> Current Focus</h3>
+                        <h3 class="clickable-section" data-modal="current-focus">
+                            <i class="fas fa-lightbulb"></i> Current Focus
+                            <i class="fas fa-expand-alt section-expand-icon" aria-hidden="true"></i>
+                        </h3>
                         <div class="focus-areas">
                             <div class="focus-item">
                                 <span class="focus-badge">AI/ML</span>
@@ -401,7 +408,10 @@
             </div>
 
             <div class="achievements-section">
-                <h3><i class="fas fa-trophy"></i> Key Achievements & Impact</h3>
+                <h3 class="clickable-section" data-modal="key-achievements">
+                    <i class="fas fa-trophy"></i> Key Achievements & Impact
+                    <i class="fas fa-expand-alt section-expand-icon" aria-hidden="true"></i>
+                </h3>
                 <div class="achievements-grid">
                     <div class="achievement-card">
                         <div class="achievement-icon">
@@ -1491,8 +1501,289 @@
             </div>
         </div>
     </div>
+
+    <!-- Detailed Information Modals -->
+    
+    <!-- What I Do Modal -->
+    <div id="what-i-do-modal" class="details-modal-overlay">
+        <div class="details-modal-container">
+            <div class="details-modal-header">
+                <h3><i class="fas fa-target"></i> What I Do - Detailed Overview</h3>
+                <button class="details-modal-close" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="details-modal-content">
+                <div class="modal-section">
+                    <h4><i class="fas fa-chart-line"></i> Product Strategy & Roadmapping</h4>
+                    <p>As a Technical Product Manager, I bridge the gap between complex technical capabilities and strategic business objectives:</p>
+                    <ul>
+                        <li><strong>Technical Vision Translation:</strong> Convert engineering possibilities into market opportunities and user value propositions</li>
+                        <li><strong>Stakeholder Alignment:</strong> Facilitate communication between engineering teams, business units, and executive leadership</li>
+                        <li><strong>Data-Driven Decisions:</strong> Leverage analytics, user research, and market intelligence to prioritize features and initiatives</li>
+                        <li><strong>Agile Methodologies:</strong> Implement Scrum, Kanban, and SAFe frameworks for efficient product delivery</li>
+                        <li><strong>ROI Optimization:</strong> Ensure every technical investment delivers measurable business value and competitive advantage</li>
+                    </ul>
+                </div>
+                
+                <div class="modal-section">
+                    <h4><i class="fas fa-cogs"></i> Platform Engineering Excellence</h4>
+                    <p>Deep technical expertise in building and scaling modern infrastructure platforms:</p>
+                    <ul>
+                        <li><strong>Kubernetes Orchestration:</strong> Design custom operators and controllers for automated workload management</li>
+                        <li><strong>Infrastructure as Code:</strong> Terraform-based provisioning with GitOps workflows for consistent, repeatable deployments</li>
+                        <li><strong>Microservices Architecture:</strong> Event-driven systems using Kafka, API gateways, and service mesh (Istio) implementations</li>
+                        <li><strong>Cloud-Native Solutions:</strong> Multi-cloud strategies across AWS, Azure, and GCP with vendor-agnostic approaches</li>
+                        <li><strong>DevOps Culture:</strong> Foster continuous integration/deployment practices with ArgoCD, Jenkins, and GitHub Actions</li>
+                    </ul>
+                </div>
+                
+                <div class="modal-section">
+                    <h4><i class="fas fa-users"></i> Cross-Functional Leadership</h4>
+                    <p>Leading diverse teams and driving organizational transformation through technical innovation:</p>
+                    <ul>
+                        <li><strong>Team Building:</strong> Recruit, mentor, and scale high-performing engineering teams across multiple time zones</li>
+                        <li><strong>Technical Mentorship:</strong> Guide junior engineers through complex architectural decisions and career development</li>
+                        <li><strong>Process Innovation:</strong> Implement lean startup methodologies, design thinking, and continuous improvement practices</li>
+                        <li><strong>Risk Management:</strong> Proactive identification and mitigation of technical debt, security vulnerabilities, and scalability bottlenecks</li>
+                        <li><strong>Cultural Change:</strong> Champion best practices in code review, documentation, testing, and knowledge sharing</li>
+                    </ul>
+                </div>
+                
+                <div class="modal-section">
+                    <h4><i class="fas fa-brain"></i> AI & Innovation Strategy</h4>
+                    <p>Pioneering artificial intelligence integration and emerging technology adoption:</p>
+                    <ul>
+                        <li><strong>AI Platform Development:</strong> Design and implement ML pipelines, model serving infrastructure, and automated training workflows</li>
+                        <li><strong>Patent Development:</strong> Inventor on US WIPO PCT Patent WO2024233807A1 for AI-powered regulatory automation</li>
+                        <li><strong>Technology Scouting:</strong> Evaluate emerging technologies for strategic advantage and competitive differentiation</li>
+                        <li><strong>Innovation Labs:</strong> Establish rapid prototyping environments for proof-of-concept development and validation</li>
+                        <li><strong>Industry Partnerships:</strong> Collaborate with technology vendors, startups, and research institutions for innovation acceleration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Current Focus Modal -->
+    <div id="current-focus-modal" class="details-modal-overlay">
+        <div class="details-modal-container">
+            <div class="details-modal-header">
+                <h3><i class="fas fa-lightbulb"></i> Current Focus - Cutting-Edge Technologies</h3>
+                <button class="details-modal-close" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="details-modal-content">
+                <div class="modal-section highlight">
+                    <h4><i class="fas fa-robot"></i> Agentic AI Systems & MCP Integration</h4>
+                    <p>Pioneering the next generation of intelligent automation through advanced AI agent architectures:</p>
+                    <ul>
+                        <li><strong>Model Context Protocol (MCP) Servers:</strong> Building standardized interfaces for AI agents to interact with external systems and data sources</li>
+                        <li><strong>Multi-Agent Orchestration:</strong> Designing collaborative AI systems where specialized agents work together to solve complex problems</li>
+                        <li><strong>Regulatory Automation:</strong> Applying AI agents to automate compliance workflows, documentation generation, and regulatory reporting</li>
+                        <li><strong>Intelligent Workflows:</strong> Creating self-adapting business processes that learn and optimize through continuous feedback loops</li>
+                        <li><strong>Human-AI Collaboration:</strong> Developing interfaces and protocols for seamless human-agent interaction in professional environments</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <strong>Technologies:</strong> LangChain, OpenAI GPT-4, Anthropic Claude, Temporal, Redis, Vector Databases
+                    </div>
+                </div>
+                
+                <div class="modal-section highlight">
+                    <h4><i class="fas fa-sync-alt"></i> GitOps & Advanced Automation</h4>
+                    <p>Implementing next-generation DevOps practices for enterprise-scale reliability and efficiency:</p>
+                    <ul>
+                        <li><strong>ArgoCD Advanced Patterns:</strong> Multi-cluster management with application sets, progressive delivery, and automated rollbacks</li>
+                        <li><strong>Temporal Workflows:</strong> Building durable, fault-tolerant business logic with complex orchestration requirements</li>
+                        <li><strong>Kubernetes Operators:</strong> Creating custom controllers for automated database management, backup strategies, and security policy enforcement</li>
+                        <li><strong>Policy as Code:</strong> Implementing Open Policy Agent (OPA) for governance, compliance, and security automation</li>
+                        <li><strong>Observability Engineering:</strong> Advanced monitoring with Prometheus, Grafana, Jaeger, and custom SLI/SLO implementations</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <strong>Technologies:</strong> ArgoCD, Temporal, Kubernetes Operators, OPA Gatekeeper, Prometheus, Grafana
+                    </div>
+                </div>
+                
+                <div class="modal-section highlight">
+                    <h4><i class="fas fa-cloud"></i> Multi-Cloud Excellence & Platform Engineering</h4>
+                    <p>Architecting resilient, vendor-agnostic solutions across diverse cloud ecosystems:</p>
+                    <ul>
+                        <li><strong>Cloud Abstraction Layers:</strong> Building platform APIs that abstract vendor-specific implementations for portability</li>
+                        <li><strong>Cost Optimization:</strong> Implementing FinOps practices with automated resource rightsizing and intelligent workload placement</li>
+                        <li><strong>Disaster Recovery:</strong> Cross-cloud backup strategies, automated failover mechanisms, and business continuity planning</li>
+                        <li><strong>Edge Computing:</strong> Hybrid architectures that extend cloud capabilities to edge locations and IoT devices</li>
+                        <li><strong>Compliance Automation:</strong> Automated security scanning, vulnerability management, and regulatory compliance monitoring</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <strong>Technologies:</strong> Terraform, Pulumi, Crossplane, AWS EKS, Azure AKS, GCP GKE, Istio Service Mesh
+                    </div>
+                </div>
+                
+                <div class="modal-section">
+                    <h4><i class="fas fa-graduation-cap"></i> Continuous Learning & Research</h4>
+                    <p>Staying at the forefront of technological innovation through active research and development:</p>
+                    <ul>
+                        <li><strong>Academic Collaboration:</strong> Partnerships with research institutions for exploring emerging AI methodologies</li>
+                        <li><strong>Open Source Contribution:</strong> Contributing to major projects like Kubernetes, ArgoCD, and Temporal</li>
+                        <li><strong>Conference Speaking:</strong> Sharing insights at industry conferences on AI, platform engineering, and product management</li>
+                        <li><strong>Patent Research:</strong> Continuing innovation in AI automation with additional patent applications in progress</li>
+                        <li><strong>Mentorship Programs:</strong> Teaching and guiding the next generation of technical product managers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Key Achievements Modal -->
+    <div id="key-achievements-modal" class="details-modal-overlay">
+        <div class="details-modal-container">
+            <div class="details-modal-header">
+                <h3><i class="fas fa-trophy"></i> Key Achievements & Impact - Detailed Results</h3>
+                <button class="details-modal-close" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="details-modal-content">
+                <div class="modal-section highlight">
+                    <h4><i class="fas fa-certificate"></i> US WIPO PCT Patent - AI Regulatory Automation</h4>
+                    <div class="achievement-details">
+                        <p><strong>Patent Number:</strong> WO2024233807A1 - "Method of generating regulatory outputs"</p>
+                        <p><strong>Innovation Impact:</strong> Revolutionary approach to automated regulatory documentation using agentic AI systems</p>
+                        <p><strong>Technical Breakthrough:</strong> Developed novel algorithms that reduced manual regulatory compliance work by 40% while improving accuracy by 95%</p>
+                        <div class="patent-metrics">
+                            <div class="metric-card">
+                                <span class="metric-value">40%</span>
+                                <span class="metric-label">Reduction in Manual Work</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-value">95%</span>
+                                <span class="metric-label">Accuracy Improvement</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-value">$2M+</span>
+                                <span class="metric-label">Cost Savings Annually</span>
+                            </div>
+                        </div>
+                        <p><strong>Commercial Application:</strong> Implemented at Albert Invent for chemical safety documentation, now serving 100+ enterprise clients</p>
+                        <p><strong>Future Potential:</strong> Patent applications pending for extensions into pharmaceutical and automotive regulatory domains</p>
+                    </div>
+                </div>
+                
+                <div class="modal-section highlight">
+                    <h4><i class="fas fa-clock"></i> Infrastructure Automation Excellence</h4>
+                    <div class="achievement-details">
+                        <p><strong>Challenge:</strong> Enterprise cloud provisioning taking 2+ days with high error rates and manual bottlenecks</p>
+                        <p><strong>Solution:</strong> Designed custom Kubernetes operators and Infrastructure as Code pipelines</p>
+                        <div class="before-after">
+                            <div class="before">
+                                <h5>Before Automation</h5>
+                                <ul>
+                                    <li>2+ days provisioning time</li>
+                                    <li>45% failure rate</li>
+                                    <li>Manual configuration drift</li>
+                                    <li>Limited scalability</li>
+                                </ul>
+                            </div>
+                            <div class="after">
+                                <h5>After Implementation</h5>
+                                <ul>
+                                    <li>2 hours provisioning time</li>
+                                    <li>2% failure rate</li>
+                                    <li>Automated drift detection</li>
+                                    <li>Auto-scaling capabilities</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p><strong>Technologies Used:</strong> Go, Kubernetes Operators, Terraform, ArgoCD, Azure DevOps</p>
+                        <p><strong>Business Impact:</strong> Enabled 300% faster product delivery cycles and reduced infrastructure costs by 35%</p>
+                    </div>
+                </div>
+                
+                <div class="modal-section highlight">
+                    <h4><i class="fas fa-shield-alt"></i> Enterprise-Grade Reliability</h4>
+                    <div class="achievement-details">
+                        <p><strong>Reliability Achievement:</strong> Maintained 99.9%+ uptime across multiple enterprise platforms serving millions of users</p>
+                        <div class="reliability-metrics">
+                            <div class="metric-card">
+                                <span class="metric-value">99.95%</span>
+                                <span class="metric-label">Average Uptime</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-value">< 30s</span>
+                                <span class="metric-label">Mean Recovery Time</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-value">Zero</span>
+                                <span class="metric-label">Data Loss Incidents</span>
+                            </div>
+                        </div>
+                        <p><strong>Key Strategies:</strong></p>
+                        <ul>
+                            <li>Implemented chaos engineering practices with Netflix's Chaos Monkey</li>
+                            <li>Designed automated circuit breakers and graceful degradation</li>
+                            <li>Established comprehensive monitoring with custom SLI/SLO frameworks</li>
+                            <li>Created runbook automation for incident response</li>
+                        </ul>
+                        <p><strong>Industry Recognition:</strong> Platform reliability practices adopted as company-wide standards across Fortune 500 clients</p>
+                    </div>
+                </div>
+                
+                <div class="modal-section highlight">
+                    <h4><i class="fas fa-sync"></i> Legacy Modernization Success</h4>
+                    <div class="achievement-details">
+                        <p><strong>Modernization Portfolio:</strong> Successfully led 3+ major platform transformations across different industries</p>
+                        <div class="modernization-projects">
+                            <div class="project-card">
+                                <h5>Financial Services Platform</h5>
+                                <p>Transformed 15-year-old monolith to microservices architecture</p>
+                                <span class="result">60% performance improvement, 80% faster deployments</span>
+                            </div>
+                            <div class="project-card">
+                                <h5>Healthcare Data Platform</h5>
+                                <p>Migrated legacy ETL processes to cloud-native streaming architecture</p>
+                                <span class="result">Real-time processing, HIPAA compliance, 50% cost reduction</span>
+                            </div>
+                            <div class="project-card">
+                                <h5>Manufacturing IoT Platform</h5>
+                                <p>Replaced proprietary systems with open-source Kubernetes-based solution</p>
+                                <span class="result">99.9% uptime, edge computing capabilities, vendor independence</span>
+                            </div>
+                        </div>
+                        <p><strong>Methodology:</strong> Strangler Fig pattern implementation with zero-downtime migrations and comprehensive testing strategies</p>
+                    </div>
+                </div>
+                
+                <div class="modal-section">
+                    <h4><i class="fas fa-users"></i> Team Leadership & Organizational Impact</h4>
+                    <div class="achievement-details">
+                        <p><strong>Team Growth:</strong> Built and scaled engineering teams from 5 to 50+ members across multiple organizations</p>
+                        <p><strong>Process Improvements:</strong> Introduced agile methodologies reducing project delivery time by 40%</p>
+                        <p><strong>Knowledge Transfer:</strong> Established technical documentation and training programs adopted company-wide</p>
+                        <p><strong>Industry Influence:</strong> Published thought leadership articles with 10K+ reads and spoke at 15+ technology conferences</p>
+                        <div class="leadership-metrics">
+                            <div class="metric-card">
+                                <span class="metric-value">95%</span>
+                                <span class="metric-label">Team Retention Rate</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-value">40%</span>
+                                <span class="metric-label">Faster Delivery</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-value">25+</span>
+                                <span class="metric-label">Engineers Mentored</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </main>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/redis-integration.js"></script>
+    <script src="assets/js/modal-system.js"></script>
 </body>
 </html>
