@@ -1898,9 +1898,9 @@ section {
 
 .about-intro {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: var(--space-8);
-    align-items: center;
+    align-items: start;
     margin-bottom: var(--space-10);
 }
 
@@ -3141,6 +3141,53 @@ section {
     color: var(--text-tertiary);
 }
 
+.project-features {
+    margin: var(--spacing-lg) 0;
+    padding: var(--spacing-lg);
+    background: var(--secondary-bg);
+    border-radius: var(--radius-lg);
+    border-left: 3px solid var(--primary-color);
+}
+
+.project-features h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.project-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.project-features li {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    position: relative;
+    padding-left: var(--spacing-lg);
+}
+
+.project-features li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.project-features li strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
 .project-tech {
     display: flex;
     flex-wrap: wrap;
@@ -3229,12 +3276,42 @@ a.tech-tag:hover {
         padding-left: 30px;
     }
     
+    .timeline::before {
+        left: 20px;
+        transform: none;
+    }
+    
     .timeline .timeline-item {
-        margin-left: var(--spacing-lg);
+        width: 100% !important;
+        margin-left: var(--spacing-lg) !important;
+        margin-right: 0 !important;
+        text-align: left !important;
+    }
+
+    .timeline .timeline-item:nth-child(odd),
+    .timeline .timeline-item:nth-child(even) {
+        margin-left: var(--spacing-lg) !important;
+        margin-right: 0 !important;
+        text-align: left !important;
     }
     
     .timeline .timeline-item::before {
-        left: -32px;
+        left: -32px !important;
+        right: auto !important;
+    }
+
+    .timeline .timeline-item:nth-child(odd) .job-header,
+    .timeline .timeline-item:nth-child(even) .job-header {
+        align-items: flex-start !important;
+    }
+
+    .timeline .timeline-item:nth-child(odd) .company-info {
+        flex-direction: row !important;
+        text-align: left !important;
+    }
+
+    .timeline .timeline-item:nth-child(odd) .company-details {
+        align-items: flex-start !important;
     }
 }
 
@@ -3283,18 +3360,44 @@ a.tech-tag:hover {
     
     .timeline::before {
         left: 10px;
+        transform: none;
     }
     
     .timeline .timeline-item {
-        margin-left: var(--spacing-md);
+        width: 100% !important;
+        margin-left: var(--spacing-md) !important;
+        margin-right: 0 !important;
         padding: var(--spacing-lg);
+        text-align: left !important;
+    }
+
+    .timeline .timeline-item:nth-child(odd),
+    .timeline .timeline-item:nth-child(even) {
+        margin-left: var(--spacing-md) !important;
+        margin-right: 0 !important;
+        text-align: left !important;
     }
     
     .timeline .timeline-item::before {
-        left: -22px;
+        left: -22px !important;
+        right: auto !important;
         width: 16px;
         height: 16px;
         top: 20px;
+    }
+
+    .timeline .timeline-item:nth-child(odd) .job-header,
+    .timeline .timeline-item:nth-child(even) .job-header {
+        align-items: flex-start !important;
+    }
+
+    .timeline .timeline-item:nth-child(odd) .company-info {
+        flex-direction: row !important;
+        text-align: left !important;
+    }
+
+    .timeline .timeline-item:nth-child(odd) .company-details {
+        align-items: flex-start !important;
     }
     
     .timeline .timeline-item h3 {
@@ -3517,37 +3620,50 @@ a.tag:hover {
 
 .timeline {
     position: relative;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding-left: 50px;
+    padding: var(--space-8) 0;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
-    left: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     top: 0;
     bottom: 0;
     width: 3px;
     background: var(--gradient-primary);
     border-radius: 2px;
+    z-index: 0;
 }
 
 .timeline .timeline-item {
     position: relative;
-    margin-bottom: var(--spacing-3xl);
+    margin-bottom: var(--space-10);
     background: var(--card-bg);
     padding: var(--spacing-2xl);
     border-radius: var(--radius-xl);
     border: 1px solid var(--border-color);
     transition: all var(--transition-normal);
-    margin-left: var(--spacing-2xl);
+    width: calc(50% - var(--space-8));
+}
+
+.timeline .timeline-item:nth-child(odd) {
+    margin-left: 0;
+    margin-right: auto;
+    text-align: right;
+}
+
+.timeline .timeline-item:nth-child(even) {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: left;
 }
 
 .timeline .timeline-item::before {
     content: '';
     position: absolute;
-    left: -42px;
     top: 30px;
     width: 20px;
     height: 20px;
@@ -3556,6 +3672,14 @@ a.tag:hover {
     border-radius: 50%;
     z-index: 2;
     box-shadow: 0 0 0 4px var(--card-bg);
+}
+
+.timeline .timeline-item:nth-child(odd)::before {
+    right: calc(-1 * var(--space-8) - 10px);
+}
+
+.timeline .timeline-item:nth-child(even)::before {
+    left: calc(-1 * var(--space-8) - 10px);
 }
 
 .timeline .timeline-item:hover {
@@ -3595,11 +3719,18 @@ a.tag:hover {
 /* Enhanced Experience Timeline Styles */
 .job-header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: flex-start;
     margin-bottom: var(--space-6);
-    flex-wrap: wrap;
     gap: var(--space-4);
+}
+
+.timeline .timeline-item:nth-child(odd) .job-header {
+    align-items: flex-end;
+}
+
+.timeline .timeline-item:nth-child(even) .job-header {
+    align-items: flex-start;
 }
 
 .job-title-company h3 {
@@ -3610,10 +3741,23 @@ a.tag:hover {
     line-height: 1.3;
 }
 
+.timeline .timeline-item:nth-child(odd) .achievements {
+    text-align: left;
+}
+
 .company-info {
     display: flex;
     align-items: center;
     gap: var(--space-4);
+}
+
+.timeline .timeline-item:nth-child(odd) .company-info {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.timeline .timeline-item:nth-child(odd) .company-details {
+    align-items: flex-end;
 }
 
 .company-info a {
