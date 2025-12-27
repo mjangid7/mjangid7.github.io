@@ -41,60 +41,63 @@
                 <h2>Mukund Jangid</h2>
                 <div class="logo-dot" aria-hidden="true"></div>
             </div>
+            
+            <!-- Breadcrumb Navigation -->
+            <div class="breadcrumb-nav" id="breadcrumb-nav" aria-label="Breadcrumb" style="display: none;">
+                <a href="#home" class="breadcrumb-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <span class="breadcrumb-separator" aria-hidden="true">/</span>
+                <span class="breadcrumb-current" id="breadcrumb-current">About</span>
+            </div>
+            
             <ul class="nav-menu" role="menubar">
                 <li class="nav-item" role="none">
-                    <a href="#hero" class="nav-link" role="menuitem" aria-describedby="nav-home-desc">
+                    <a href="#home" class="nav-link active" role="menuitem" aria-describedby="nav-home-desc">
                         <span class="nav-text">Home</span>
-                        <span class="nav-number" aria-hidden="true">01</span>
                     </a>
                     <span id="nav-home-desc" class="sr-only">Go to homepage section</span>
                 </li>
                 <li class="nav-item" role="none">
                     <a href="#about" class="nav-link" role="menuitem" aria-describedby="nav-about-desc">
                         <span class="nav-text">About</span>
-                        <span class="nav-number" aria-hidden="true">02</span>
                     </a>
                     <span id="nav-about-desc" class="sr-only">Go to about me section</span>
                 </li>
                 <li class="nav-item" role="none">
                     <a href="#experience" class="nav-link" role="menuitem" aria-describedby="nav-experience-desc">
                         <span class="nav-text">Experience</span>
-                        <span class="nav-number" aria-hidden="true">03</span>
                     </a>
                     <span id="nav-experience-desc" class="sr-only">Go to professional experience section</span>
                 </li>
                 <li class="nav-item" role="none">
                     <a href="#skills" class="nav-link" role="menuitem" aria-describedby="nav-skills-desc">
                         <span class="nav-text">Skills</span>
-                        <span class="nav-number" aria-hidden="true">04</span>
                     </a>
                     <span id="nav-skills-desc" class="sr-only">Go to skills and competencies section</span>
                 </li>
                 <li class="nav-item" role="none">
                     <a href="#education" class="nav-link" role="menuitem" aria-describedby="nav-education-desc">
                         <span class="nav-text">Education</span>
-                        <span class="nav-number" aria-hidden="true">05</span>
                     </a>
                     <span id="nav-education-desc" class="sr-only">Go to education and certifications section</span>
                 </li>
                 <li class="nav-item" role="none">
                     <a href="#projects" class="nav-link" role="menuitem" aria-describedby="nav-projects-desc">
                         <span class="nav-text">Projects</span>
-                        <span class="nav-number" aria-hidden="true">06</span>
                     </a>
                     <span id="nav-projects-desc" class="sr-only">Go to featured projects section</span>
                 </li>
                 <li class="nav-item" role="none">
                     <a href="#github-activity" class="nav-link" role="menuitem" aria-describedby="nav-github-desc">
                         <span class="nav-text">GitHub</span>
-                        <span class="nav-number" aria-hidden="true">07</span>
                     </a>
                     <span id="nav-github-desc" class="sr-only">Go to GitHub activity section</span>
                 </li>
                 <li class="nav-item" role="none">
                     <a href="#contact" class="nav-link" role="menuitem" aria-describedby="nav-contact-desc">
                         <span class="nav-text">Contact</span>
-                        <span class="nav-number" aria-hidden="true">08</span>
                     </a>
                     <span id="nav-contact-desc" class="sr-only">Go to contact information section</span>
                 </li>
@@ -130,8 +133,8 @@
 
     <!-- Main Content -->
     <main id="main-content">
-        <!-- Hero Section -->
-        <section id="hero" class="hero" aria-labelledby="hero-title">
+        <!-- Home Section (Landing Page) -->
+        <section id="home" class="hero" aria-labelledby="hero-title">
             <div class="hero-bg" aria-hidden="true">
                 <div class="hero-particles"></div>
                 <div class="hero-grid"></div>
@@ -142,6 +145,7 @@
                 </div>
                 <div class="hero-mesh"></div>
             </div>
+            
             <div class="hero-container">
                 <div class="hero-content">
                     <div class="hero-badge" role="status" aria-live="polite">
@@ -178,11 +182,11 @@
                         </div>
                     </div>
                     <div class="hero-cta">
-                        <a href="#projects" class="btn btn-primary" aria-describedby="cta-work-desc">
-                            <span>View My Work</span>
+                        <a href="#about" class="btn btn-primary" aria-describedby="cta-next-desc">
+                            <span>Discover My Journey</span>
                             <i class="fas fa-arrow-right" aria-hidden="true"></i>
                         </a>
-                        <span id="cta-work-desc" class="sr-only">Navigate to projects showcase section</span>
+                        <span id="cta-next-desc" class="sr-only">Navigate to about section</span>
 
                         <a href="https://www.linkedin.com/in/mukund-j-b01847b1/" 
                            target="_blank" 
@@ -224,78 +228,69 @@
                     </div>
                 </div>
             </div>
-            <div class="scroll-indicator" aria-hidden="true">
-                <div class="scroll-line"></div>
-                <span class="scroll-text">Scroll to explore</span>
-            </div>
         </section>
 
-        <!-- Companies Section -->
-        <section class="companies-section" aria-labelledby="companies-heading">
-            <div class="container">
-                <h2 id="companies-heading" class="companies-text">Contributed to Elite set of leading organizations</h2>
-                <div class="companies-logos" role="list" aria-label="Companies I have worked with">
-                    <a href="https://www.vertexinc.com" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       class="company-link"
-                       role="listitem"
-                       aria-label="Visit Vertex Inc website">
-                        <img src="assets/images/logos/vertex_logo.png" 
-                             alt="Vertex Inc logo" 
-                             class="company-logo-big"
-                             width="120" 
-                             height="60">
-                    </a>
-                    <a href="https://www.mckinsey.com" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       class="company-link"
-                       role="listitem"
-                       aria-label="Visit McKinsey & Company website">
-                        <img src="assets/images/logos/mc_logo.png" 
-                             alt="McKinsey & Company logo" 
-                             class="company-logo-big"
-                             width="120" 
-                             height="60">
-                    </a>
-                    <a href="https://www.albertinvent.com" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       class="company-link"
-                       role="listitem"
-                       aria-label="Visit Albert Invent website">
-                        <img src="assets/images/logos/albert_logo.png" 
-                             alt="Albert Invent logo" 
-                             class="company-logo-big"
-                             width="120" 
-                             height="60">
-                </a>
-                <a href="https://lifebit.ai" target="_blank" rel="noopener noreferrer" class="company-link">
-                    <img src="assets/images/logos/lifebit_logo.png" alt="Lifebit Biotech" class="company-logo-big">
-                </a>
-                <a href="https://www.3ds.com" target="_blank" rel="noopener noreferrer" class="company-link">
-                    <img src="assets/images/logos/3ds_logo.png" alt="Dassault Systèmes" class="company-logo-big">
-                </a>
-                <a href="https://www.medidata.com" target="_blank" rel="noopener noreferrer" class="company-link">
-                    <img src="assets/images/logos/medidata_logo.png" alt="Medidata Solutions" class="company-logo-big">
-                </a>                
-                <a href="https://www.capgemini.com" target="_blank" rel="noopener noreferrer" class="company-link">
-                    <img src="assets/images/logos/cg_logo.png" alt="Capgemini" class="company-logo-big">
-                </a>
-                <a href="https://www.morganstanley.com" target="_blank" rel="noopener noreferrer" class="company-link">
-                    <img src="assets/images/logos/morgan_logo.png" alt="Morgan Stanley" class="company-logo-big">
-                </a>                
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
+        <!-- About Section -->
+            <div class="companies-section" aria-labelledby="companies-heading">
+                <div class="container">
+                    <h2 id="companies-heading" class="companies-text">Contributed to Elite set of leading organizations</h2>
+                    <div class="companies-logos" role="list" aria-label="Companies I have worked with">
+                        <a href="https://www.vertexinc.com" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="company-link"
+                           role="listitem"
+                           aria-label="Visit Vertex Inc website">
+                            <img src="assets/images/logos/vertex_logo.png" 
+                                 alt="Vertex Inc logo" 
+                                 class="company-logo-big"
+                                 width="120" 
+                                 height="60">
+                        </a>
+                        <a href="https://www.mckinsey.com" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="company-link"
+                           role="listitem"
+                           aria-label="Visit McKinsey & Company website">
+                            <img src="assets/images/logos/mc_logo.png" 
+                                 alt="McKinsey & Company logo" 
+                                 class="company-logo-big"
+                                 width="120" 
+                                 height="60">
+                        </a>
+                        <a href="https://www.albertinvent.com" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="company-link"
+                           role="listitem"
+                           aria-label="Visit Albert Invent website">
+                            <img src="assets/images/logos/albert_logo.png" 
+                                 alt="Albert Invent logo" 
+                                 class="company-logo-big"
+                                 width="120" 
+                                 height="60">
+                        </a>
+                        <a href="https://lifebit.ai" target="_blank" rel="noopener noreferrer" class="company-link">
+                            <img src="assets/images/logos/lifebit_logo.png" alt="Lifebit Biotech" class="company-logo-big">
+                        </a>
+                        <a href="https://www.3ds.com" target="_blank" rel="noopener noreferrer" class="company-link">
+                            <img src="assets/images/logos/3ds_logo.png" alt="Dassault Systèmes" class="company-logo-big">
+                        </a>
+                        <a href="https://www.medidata.com" target="_blank" rel="noopener noreferrer" class="company-link">
+                            <img src="assets/images/logos/medidata_logo.png" alt="Medidata Solutions" class="company-logo-big">
+                        </a>                
+                        <a href="https://www.capgemini.com" target="_blank" rel="noopener noreferrer" class="company-link">
+                            <img src="assets/images/logos/cg_logo.png" alt="Capgemini" class="company-logo-big">
+                        </a>
+                        <a href="https://www.morganstanley.com" target="_blank" rel="noopener noreferrer" class="company-link">
+                            <img src="assets/images/logos/morgan_logo.png" alt="Morgan Stanley" class="company-logo-big">
+                        </a>                
+                    </div>
+                </div>
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">02</span>
-                <h2 class="section-title">About Me</h2>
                 <p class="section-subtitle">Building the Future of Platform Engineering & AI Strategy</p>
             </div>
             
@@ -525,6 +520,14 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Next Section Button -->
+            <div class="section-navigation">
+                <a href="#experience" class="btn btn-primary btn-next-section">
+                    <span>Explore My Career Path</span>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -532,8 +535,6 @@
     <section id="experience" class="experience">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">03</span>
-                <h2 class="section-title">Professional Experience</h2>
                 <p class="section-subtitle">Building scalable platforms and leading technical innovation</p>
             </div>
             <div class="timeline">
@@ -764,6 +765,14 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Next Section Button -->
+            <div class="section-navigation">
+                <a href="#skills" class="btn btn-primary btn-next-section">
+                    <span>View My Technical Expertise</span>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -771,7 +780,6 @@
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Core Competencies</h2>
                 <p class="section-subtitle">Technical expertise meets product strategy</p>
             </div>
             <div class="skills-grid-new">
@@ -846,6 +854,14 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Next Section Button -->
+            <div class="section-navigation">
+                <a href="#education" class="btn btn-primary btn-next-section">
+                    <span>See My Credentials</span>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -853,8 +869,6 @@
     <section id="education" class="education">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">05</span>
-                <h2 class="section-title">Education & Certifications</h2>
                 <p class="section-subtitle">Continuous learning and professional development</p>
             </div>
             
@@ -1048,6 +1062,14 @@
                     </a>
                 </div>
             </div>
+            
+            <!-- Next Section Button -->
+            <div class="section-navigation">
+                <a href="#projects" class="btn btn-primary btn-next-section">
+                    <span>Explore My Portfolio</span>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -1055,8 +1077,6 @@
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">06</span>
-                <h2 class="section-title">Featured Projects</h2>
                 <p class="section-subtitle">Transforming technical challenges into strategic solutions</p>
             </div>
             <div class="projects-grid">
@@ -1256,6 +1276,14 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Next Section Button -->
+            <div class="section-navigation">
+                <a href="#github-activity" class="btn btn-primary btn-next-section">
+                    <span>View My Code Contributions</span>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -1263,8 +1291,6 @@
     <section id="github-activity" class="github-activity">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">06.5</span>
-                <h2 class="section-title">GitHub Activity</h2>
                 <p class="section-subtitle">Continuous learning and open-source contributions</p>
             </div>
             
@@ -1350,7 +1376,8 @@
                     </div>
                     <div class="github-stat-card">
                         <img src="https://streak-stats.demolab.com?user=mjangid7&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=58a6ff&ring=1f6feb&fire=58a6ff&currStreakLabel=c9d1d9&date_format=M%20j%5B%2C%20Y%5D" 
-                             alt="GitHub Streak Stats">
+                             alt="GitHub Streak Stats"
+                             loading="lazy">
                     </div>
                 </div>
 
@@ -1368,8 +1395,8 @@
                     </div>
                     <div class="contribution-graph">
                         <img src="https://ghchart.rshah.org/58a6ff/mjangid7" 
-                             alt="Mukund's GitHub Contribution Graph" 
-                             onerror="this.parentElement.innerHTML='<div class=\"graph-fallback\"><p>View my complete contribution history on <a href=\"https://github.com/mjangid7\" target=\"_blank\">GitHub</a></p></div>'">
+                             alt="Mukund's GitHub Contribution Graph"
+                             loading="lazy">
                     </div>
                 </div>
 
@@ -1378,9 +1405,10 @@
                     <!-- GitHub Activity Graph -->
                     <div class="github-activity-graph">
                         <h3>Recent Activity Graph</h3>
-                        <div class="graph-container">
+                        <div class="activity-graph-container">
                             <img src="https://github-readme-activity-graph.vercel.app/graph?username=mjangid7&theme=github-dark-dimmed&hide_border=true&bg_color=0d1117&color=58a6ff&line=1f6feb&point=58a6ff&area=true&custom_title=Contribution%20Activity%20Graph" 
-                                 alt="GitHub Activity Graph">
+                                 alt="GitHub Activity Graph"
+                                 loading="lazy">
                         </div>
                     </div>
 
@@ -1456,6 +1484,14 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Next Section Button -->
+            <div class="section-navigation">
+                <a href="#contact" class="btn btn-primary btn-next-section">
+                    <span>Let's Connect</span>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -1463,8 +1499,6 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">08</span>
-                <h2 class="section-title">Let's Connect</h2>
                 <p class="section-subtitle">Ready to build something amazing together? Let's start the conversation.</p>
             </div>
             
@@ -1989,6 +2023,8 @@
     </div>
     </main>
 
+    <script src="assets/js/page-navigation.js"></script>
+    <script src="assets/js/lazy-loading.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/redis-integration.js"></script>
     <script src="assets/js/modal-system.js"></script>
