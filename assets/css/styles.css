@@ -3906,6 +3906,704 @@ a.tag:hover {
     }
 }
 
+/* GitHub Activity Section */
+.github-activity {
+    background: var(--secondary-bg);
+    position: relative;
+    padding: var(--spacing-4xl) 0;
+    overflow: hidden;
+}
+
+.github-activity::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, 
+        transparent, 
+        var(--border-color) 20%, 
+        var(--border-color) 80%, 
+        transparent
+    );
+}
+
+.github-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+}
+
+/* GitHub Profile Summary */
+.github-profile-summary {
+    background: var(--card-bg);
+    border-radius: var(--spacing-md);
+    padding: var(--spacing-2xl);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-theme);
+}
+
+.github-profile-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2xl);
+    flex-wrap: wrap;
+}
+
+.github-avatar-link {
+    flex-shrink: 0;
+}
+
+.github-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    box-shadow: var(--shadow-glow);
+    transition: var(--transition-theme);
+}
+
+.github-avatar:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-glow), 0 0 30px rgba(37, 99, 235, 0.4);
+}
+
+.github-profile-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.github-profile-info h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+}
+
+.github-profile-info h3 a {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: var(--transition-theme);
+}
+
+.github-profile-info h3 a:hover {
+    color: var(--primary-color);
+}
+
+.github-bio {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.6;
+}
+
+.github-quick-stats {
+    display: flex;
+    gap: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+
+.quick-stat {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+.quick-stat i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.quick-stat strong {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1;
+}
+
+.quick-stat span {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.github-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.github-stat-card {
+    background: var(--card-bg);
+    border-radius: var(--spacing-md);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-theme);
+    overflow: hidden;
+}
+
+.github-stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.github-stat-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--spacing-sm);
+}
+
+/* Custom Stats Card */
+.custom-stats-card {
+    background: linear-gradient(135deg, var(--card-bg) 0%, var(--secondary-bg) 100%);
+    border: 1px solid var(--border-color);
+}
+
+.custom-stats-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.custom-stats-header h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.stats-grade {
+    position: relative;
+}
+
+.grade-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    background: var(--card-bg);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.grade-circle::before {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    padding: 4px;
+    background: conic-gradient(from 0deg, var(--primary-color) 0deg, var(--primary-color) 340deg, transparent 340deg);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.custom-stats-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.stat-row {
+    display: grid;
+    grid-template-columns: 30px 1fr auto;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--tertiary-bg);
+    border-radius: var(--spacing-xs);
+    transition: var(--transition-theme);
+}
+
+.stat-row:hover {
+    background: var(--card-bg-hover);
+    transform: translateX(4px);
+}
+
+.stat-icon {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.stat-label {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.stat-value {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: right;
+}
+
+.stats-footer {
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.visit-profile-link {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: var(--transition-theme);
+}
+
+.visit-profile-link span {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.visit-profile-link:hover {
+    color: var(--primary-color);
+}
+
+.github-contribution-card {
+    background: var(--card-bg);
+    border-radius: var(--spacing-md);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-theme);
+}
+
+.contribution-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xl);
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.contribution-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.github-profile-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: var(--gradient-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--spacing-sm);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition-theme);
+}
+
+.github-profile-link:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+}
+
+.contribution-graph {
+    margin-top: var(--spacing-lg);
+    border-radius: var(--spacing-sm);
+    overflow: hidden;
+}
+
+.contribution-graph img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--spacing-sm);
+}
+
+.github-languages-card {
+    background: var(--card-bg);
+    border-radius: var(--spacing-md);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-theme);
+}
+
+.github-languages-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Compact Language Bars */
+.language-bars {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    width: 100%;
+}
+
+.languages-compact {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.language-bar-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.lang-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xs);
+}
+
+.lang-name {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.github-split-layout .lang-name {
+    font-size: 0.85rem;
+}
+
+.lang-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.github-split-layout .lang-dot {
+    width: 10px;
+    height: 10px;
+}
+
+.lang-percent {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.github-split-layout .lang-percent {
+    font-size: 0.8rem;
+}
+
+.lang-bar-bg {
+    width: 100%;
+    height: 6px;
+    background: var(--tertiary-bg);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.github-split-layout .lang-bar-bg {
+    height: 5px;
+}
+
+.lang-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 1s ease-out;
+    box-shadow: 0 0 4px currentColor;
+}
+
+/* Old language grid styles - keep for backwards compatibility */
+.languages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.language-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: var(--secondary-bg);
+    border-radius: var(--spacing-sm);
+    transition: var(--transition-theme);
+    border: 1px solid var(--border-color);
+}
+
+.language-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-color);
+}
+
+.language-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    flex-shrink: 0;
+    box-shadow: var(--shadow-sm);
+}
+
+.language-icon i {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.language-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.language-info h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.language-bar {
+    width: 100%;
+    height: 6px;
+    background: var(--tertiary-bg);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: var(--spacing-xs);
+}
+
+.language-progress {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 1s ease-in-out;
+    box-shadow: 0 0 8px currentColor;
+}
+
+.language-percentage {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.github-languages-card img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* GitHub Split Layout for Activity and Languages */
+.github-split-layout {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    gap: 2%;
+    margin-top: var(--spacing-2xl);
+    align-items: flex-start;
+    width: 100%;
+}
+
+.github-split-layout > * {
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.github-activity-graph {
+    background: var(--card-bg);
+    border-radius: var(--spacing-md);
+    padding: var(--spacing-md);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-theme);
+    width: 58%;
+}
+
+.graph-container {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.graph-container img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.github-activity-graph h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xl);
+}
+
+.github-split-layout .github-languages-card {
+    padding: var(--spacing-md);
+    width: 40%;
+    min-width: 0;
+}
+
+.github-split-layout .github-languages-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.github-split-layout .language-bar-item {
+    gap: 4px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.language-bars {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    width: 100%;
+}
+
+.github-activity-graph img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--spacing-sm);
+}
+
+/* GitHub Fallback States */
+.stat-fallback,
+.graph-fallback,
+.lang-fallback,
+.activity-fallback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-2xl);
+    text-align: center;
+    min-height: 200px;
+    background: var(--tertiary-bg);
+    border-radius: var(--spacing-sm);
+}
+
+.stat-fallback i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.stat-fallback p,
+.graph-fallback p,
+.lang-fallback p,
+.activity-fallback p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.stat-fallback a,
+.graph-fallback a,
+.lang-fallback a,
+.activity-fallback a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition-theme);
+}
+
+.stat-fallback a:hover,
+.graph-fallback a:hover,
+.lang-fallback a:hover,
+.activity-fallback a:hover {
+    text-decoration: underline;
+}
+
+/* GitHub Activity Responsive Design */
+@media (max-width: 768px) {
+    .github-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .github-split-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .languages-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .languages-compact {
+        max-width: 100%;
+    }
+    
+    .custom-stats-header {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .grade-circle {
+        width: 60px;
+        height: 60px;
+        font-size: 1.2rem;
+    }
+    
+    .github-profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .github-avatar {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .github-profile-info {
+        min-width: 100%;
+    }
+    
+    .github-quick-stats {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-md);
+    }
+    
+    .contribution-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .github-profile-link {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
 /* Contact Section */
 .contact {
     background: var(--primary-bg);
