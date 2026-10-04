@@ -3,154 +3,175 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mukund Jangid · Technical Product Manager & AI Strategist</title>
-<meta name="description" content="Technical Product Manager building AI-powered platforms. 10+ years, IIM Kozhikode EMBA, US WIPO PCT patent holder.">
-<meta property="og:title" content="Mukund Jangid · Technical Product Manager & AI Strategist">
-<meta property="og:description" content="AI platforms, platform engineering and product leadership. 10+ years. Patent holder.">
+<title>Mukund Jangid · AI Product & Engineering Leader</title>
+<meta name="description" content="Technical product and engineering leader with 9+ years building cloud-native, agentic AI platforms in FinTech, Life Sciences and ChemTech. Patent inventor.">
+<meta property="og:title" content="Mukund Jangid · AI Product & Engineering Leader">
+<meta property="og:description" content="Agentic AI, platform engineering and regulated-domain products. 9+ years. Patent inventor.">
 <meta property="og:image" content="https://mjangid7.github.io/assets/images/self.jpeg">
-<meta name="theme-color" content="#07070d">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%236366f1'/><text x='50' y='68' font-size='56' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'>MJ</text></svg>">
+<meta name="theme-color" content="#0a111c">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230a111c'/><text x='50' y='67' font-size='50' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%232dd4bf'>MJ</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#07070d;--bg2:#0e0e18;--card:rgba(255,255,255,.04);--bd:rgba(255,255,255,.09);--tx:#f2f2f8;--mut:#9a9ab0;--a:#6366f1;--b:#22d3ee;--c:#e879f9;--grad:linear-gradient(120deg,var(--a),var(--b) 55%,var(--c))}
-:root[data-theme=light]{--bg:#f7f7fb;--bg2:#fff;--card:rgba(0,0,0,.035);--bd:rgba(0,0,0,.09);--tx:#12121c;--mut:#5d5d72}
+:root{
+  --bg:#0a111c;--bg2:#101a29;--card:#111c2c;--bd:#1f2d42;--tx:#e8eef7;--mut:#8fa1b8;
+  --ac:#2dd4bf;--ac2:#38bdf8;--acs:rgba(45,212,191,.12);--glow:rgba(45,212,191,.10);
+  --serif:'Fraunces',Georgia,serif
+}
+:root[data-theme=light]{
+  --bg:#f6f8fb;--bg2:#eef2f7;--card:#fff;--bd:#dbe3ee;--tx:#0d1a2b;--mut:#51637a;
+  --ac:#0f766e;--ac2:#0369a1;--acs:rgba(15,118,110,.09);--glow:rgba(15,118,110,.07)
+}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6;overflow-x:hidden;transition:background .3s,color .3s}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.65;overflow-x:hidden;transition:background .3s,color .3s;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-section{padding:90px 0}
-.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% auto;animation:flow 6s linear infinite}
-@keyframes flow{to{background-position:200% center}}
-#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--grad);z-index:100}
-#bg{position:fixed;inset:0;z-index:-1;overflow:hidden}
-#bg i{position:absolute;border-radius:50%;filter:blur(90px);opacity:.28;animation:float 18s ease-in-out infinite}
-#bg i:nth-child(1){width:480px;height:480px;background:var(--a);top:-120px;left:-100px}
-#bg i:nth-child(2){width:420px;height:420px;background:var(--b);top:35%;right:-120px;animation-delay:-6s}
-#bg i:nth-child(3){width:380px;height:380px;background:var(--c);bottom:-120px;left:30%;animation-delay:-12s}
-:root[data-theme=light] #bg i{opacity:.18}
-@keyframes float{50%{transform:translate(60px,-50px) scale(1.15)}}
-nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:4px;padding:6px;background:color-mix(in srgb,var(--bg2) 70%,transparent);backdrop-filter:blur(16px);border:1px solid var(--bd);border-radius:999px;max-width:calc(100vw - 24px)}
-nav a,nav button{font:500 .85rem Inter;padding:8px 14px;border-radius:999px;color:var(--mut);background:none;border:0;cursor:pointer;transition:.2s;white-space:nowrap}
-nav a:hover,nav a.on,nav button:hover{color:var(--tx);background:var(--card)}
-nav a.on{background:var(--a);color:#fff}
-@media(max-width:640px){nav a:not(.keep){display:none}}
-.hero{min-height:100vh;display:flex;align-items:center;padding-top:110px}
-.hero .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:center}
-@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.avatar{order:-1;max-width:220px}}
-.badge{display:inline-flex;align-items:center;gap:8px;font:500 .8rem 'JetBrains Mono';padding:6px 14px;border:1px solid var(--bd);border-radius:999px;background:var(--card);color:var(--mut);margin-bottom:22px}
-.badge b{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 0 #22c55e;animation:pulse 2s infinite}
-@keyframes pulse{70%{box-shadow:0 0 0 10px transparent}}
-h1{font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.05;font-weight:800;letter-spacing:-.03em}
-.type{font:500 1.15rem 'JetBrains Mono';color:var(--b);margin:18px 0;min-height:1.8em}
-.type::after{content:'▍';animation:blink 1s steps(1) infinite;margin-left:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+section{padding:84px 0}
+#progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--ac);z-index:100}
+#grid{position:fixed;inset:0;z-index:-1;background-image:linear-gradient(var(--bd) 1px,transparent 1px),linear-gradient(90deg,var(--bd) 1px,transparent 1px);background-size:56px 56px;opacity:.28;mask-image:radial-gradient(ellipse 70% 55% at 50% 0,#000,transparent);-webkit-mask-image:radial-gradient(ellipse 70% 55% at 50% 0,#000,transparent)}
+#spot{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(600px circle at var(--x,50%) var(--y,20%),var(--glow),transparent 60%)}
+header.top{position:fixed;top:0;left:0;right:0;z-index:50;background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--bd)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font:600 1.15rem var(--serif);letter-spacing:-.01em}
+.logo i{color:var(--ac);font-style:normal}
+nav{display:flex;align-items:center;gap:2px}
+nav a,nav button{font:500 .84rem Inter;padding:7px 12px;border-radius:8px;color:var(--mut);background:none;border:0;cursor:pointer;transition:.2s}
+nav a:hover,nav button:hover{color:var(--tx);background:var(--acs)}
+nav a.on{color:var(--ac)}
+@media(max-width:720px){nav a:not(.keep){display:none}}
+.hero{min-height:100vh;display:flex;align-items:center;padding:110px 0 60px}
+.hero .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:center}
+@media(max-width:840px){.hero .wrap{grid-template-columns:1fr;gap:32px}.photo{order:-1;max-width:200px}}
+.status{display:inline-flex;align-items:center;gap:9px;font:500 .78rem 'JetBrains Mono';color:var(--mut);padding:6px 13px;border:1px solid var(--bd);border-radius:999px;background:var(--card);margin-bottom:24px}
+.status b{width:7px;height:7px;border-radius:50%;background:var(--ac);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(45,212,191,.55)}70%,100%{box-shadow:0 0 0 9px transparent}}
+h1{font:600 clamp(2.5rem,6vw,4.2rem)/1.06 var(--serif);letter-spacing:-.025em}
+h1 em{font-style:normal;color:var(--ac)}
+.role{font:500 1rem 'JetBrains Mono';color:var(--ac2);margin:20px 0 14px;min-height:1.7em}
+.role::after{content:'';display:inline-block;width:8px;height:1.05em;background:var(--ac);margin-left:4px;vertical-align:-2px;animation:blink 1s steps(1) infinite}
 @keyframes blink{50%{opacity:0}}
-.lead{color:var(--mut);max-width:560px;font-size:1.05rem}
-.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:12px;font-weight:600;font-size:.95rem;border:1px solid var(--bd);transition:transform .2s,box-shadow .2s;background:var(--card)}
-.btn:hover{transform:translateY(-3px)}
-.btn.p{background:var(--grad);border:0;color:#fff;box-shadow:0 10px 30px -8px var(--a)}
-.avatar{position:relative;aspect-ratio:1;width:100%;justify-self:center}
-.avatar::before{content:'';position:absolute;inset:-6px;border-radius:50%;background:conic-gradient(var(--a),var(--b),var(--c),var(--a));animation:spin 8s linear infinite;filter:blur(2px)}
-.avatar img{position:relative;width:100%;height:100%;object-fit:cover;border-radius:50%;border:6px solid var(--bg)}
-@keyframes spin{to{transform:rotate(360deg)}}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:70px}
-@media(max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}}
-.stat{padding:22px;text-align:center}
-.stat b{display:block;font-size:2.2rem;font-weight:800}
-.stat span{color:var(--mut);font-size:.85rem}
-.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;backdrop-filter:blur(8px);transition:transform .25s,border-color .25s,box-shadow .25s;position:relative;overflow:hidden}
-.card::after{content:'';position:absolute;inset:0;background:radial-gradient(300px circle at var(--mx,50%) var(--my,50%),rgba(99,102,241,.16),transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none}
-.card:hover{border-color:color-mix(in srgb,var(--a) 60%,transparent);transform:translateY(-4px)}
-.card:hover::after{opacity:1}
-.eyebrow{font:500 .8rem 'JetBrains Mono';color:var(--b);letter-spacing:.12em;text-transform:uppercase}
-h2{font-size:clamp(1.8rem,4vw,2.7rem);font-weight:800;letter-spacing:-.02em;margin:8px 0 40px}
-.wins{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
-.win{padding:26px}
-.win b{display:block;font-size:2rem;font-weight:800;margin-bottom:6px}
-.win p{color:var(--mut);font-size:.92rem}
-.tl{position:relative;padding-left:28px;border-left:2px solid var(--bd);display:grid;gap:20px}
-.job{padding:24px;position:relative}
-.job::before{content:'';position:absolute;left:-37px;top:30px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--a);box-shadow:0 0 14px var(--a)}
-.job h3{font-size:1.1rem}
-.job .meta{color:var(--mut);font-size:.85rem;margin:2px 0 10px;font-family:'JetBrains Mono'}
-.job p{color:var(--mut);font-size:.93rem}
-.job p b{color:var(--tx);font-weight:600}
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-.tags span{font:.78rem 'JetBrains Mono';padding:4px 11px;border-radius:8px;background:var(--card);border:1px solid var(--bd);color:var(--mut);transition:.2s}
-.tags span:hover{color:var(--tx);border-color:var(--a)}
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
-.skills .card{padding:24px}
-.skills h3{font-size:.95rem;margin-bottom:4px}
-.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
-.proj{padding:28px;display:flex;flex-direction:column}
-.proj .k{font:700 2.4rem Inter}
-.proj h3{margin:6px 0 8px}
-.proj p{color:var(--mut);font-size:.92rem;flex:1}
-.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.lead{color:var(--mut);max-width:540px;font-size:1.04rem}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:600;font-size:.9rem;border:1px solid var(--bd);background:var(--card);transition:transform .2s,border-color .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);border-color:var(--ac)}
+.btn.p{background:var(--ac);color:#04201c;border-color:var(--ac)}
+:root[data-theme=light] .btn.p{color:#fff}
+.btn.p:hover{box-shadow:0 8px 24px -8px var(--ac)}
+.photo{position:relative;aspect-ratio:1;width:100%;justify-self:center}
+.photo::before{content:'';position:absolute;inset:-10px;border:1px solid var(--bd);border-radius:28px;transform:rotate(4deg);transition:transform .5s}
+.photo:hover::before{transform:rotate(0)}
+.photo img{position:relative;width:100%;height:100%;object-fit:cover;border-radius:24px;border:1px solid var(--bd);filter:saturate(.95)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bd);border:1px solid var(--bd);border-radius:16px;overflow:hidden;margin-top:64px}
+@media(max-width:700px){.facts{grid-template-columns:repeat(2,1fr)}.fact b{font-size:1.45rem}}
+.fact{background:var(--card);padding:24px 20px}
+.fact b{display:block;font:600 2rem var(--serif);color:var(--tx)}
+.fact b span{color:var(--ac)}
+.fact small{color:var(--mut);font-size:.82rem}
+.eyebrow{font:500 .76rem 'JetBrains Mono';color:var(--ac);letter-spacing:.14em;text-transform:uppercase}
+h2{font:600 clamp(1.8rem,4vw,2.5rem)/1.15 var(--serif);letter-spacing:-.02em;margin:10px 0 36px}
+.about p{color:var(--mut);font-size:1.05rem;max-width:760px}
+.about p strong{color:var(--tx);font-weight:600}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;transition:transform .25s,border-color .25s;position:relative}
+.card:hover{border-color:color-mix(in srgb,var(--ac) 55%,var(--bd))}
+.hl{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:36px}
+.hl .card{padding:22px}
+.hl b{display:block;font:600 1.9rem var(--serif);color:var(--ac)}
+.hl p{color:var(--mut);font-size:.88rem;margin-top:4px}
+.tl{display:grid;gap:16px;position:relative}
+.tl::before{content:'';position:absolute;left:5px;top:10px;bottom:10px;width:1px;background:var(--bd)}
+.job{margin-left:28px;padding:26px 26px 22px}
+.job::before{content:'';position:absolute;left:-28px;top:30px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--ac)}
+.job.cur::before{background:var(--ac);box-shadow:0 0 0 5px var(--acs)}
+.job header{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.job h3{font:600 1.18rem var(--serif)}
+.job .co{color:var(--ac);font-weight:600;font-size:.92rem}
+.job .when{font:.78rem 'JetBrains Mono';color:var(--mut)}
+.job ul{list-style:none;margin-top:14px;display:grid;gap:8px}
+.job li{color:var(--mut);font-size:.92rem;padding-left:18px;position:relative}
+.job li::before{content:'›';position:absolute;left:2px;color:var(--ac);font-weight:700}
+.job li b{color:var(--tx);font-weight:600}
+.job.more ul li:nth-child(n+5){display:none}
+.job.more.open ul li{display:list-item}
+.tog{margin-top:12px;font:500 .8rem 'JetBrains Mono';color:var(--ac);background:none;border:0;cursor:pointer;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chips span{font:.76rem 'JetBrains Mono';padding:4px 10px;border-radius:7px;background:var(--acs);border:1px solid var(--bd);color:var(--tx)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:14px}
+.skills .card{padding:22px}
+.skills h3{font:600 .8rem 'JetBrains Mono';color:var(--ac2);text-transform:uppercase;letter-spacing:.1em;margin-bottom:14px}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:14px}
+.proj{padding:26px;display:flex;flex-direction:column;gap:10px}
+.proj .out{font:500 .76rem 'JetBrains Mono';color:var(--ac)}
+.proj h3{font:600 1.15rem var(--serif)}
+.proj p{color:var(--mut);font-size:.9rem;flex:1}
+.proj .chips{margin-top:6px}
+.patent{padding:32px;display:grid;gap:12px;background:linear-gradient(135deg,var(--card),var(--bg2));margin-bottom:14px}
+.patent h3{font:600 1.35rem var(--serif)}
+.patent p{color:var(--mut);max-width:720px}
+.patent .cta{margin-top:6px}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
 .edu .card{padding:24px}
-.edu small{color:var(--mut);font-family:'JetBrains Mono';font-size:.78rem}
-.contact{text-align:center}
-.contact .card{padding:64px 24px;background:linear-gradient(135deg,rgba(99,102,241,.16),rgba(34,211,238,.08))}
-.contact h2{margin-bottom:12px}
-.contact p{color:var(--mut);margin-bottom:28px}
+.edu h3{font:600 1.05rem var(--serif)}
+.edu p{color:var(--mut);font-size:.88rem}
+.edu small{font:.76rem 'JetBrains Mono';color:var(--ac)}
+.contact .card{padding:56px 28px;text-align:center;background:linear-gradient(160deg,var(--card),var(--bg2))}
+.contact h2{margin-bottom:10px}
+.contact p{color:var(--mut);margin-bottom:26px}
 .contact .cta{justify-content:center}
-footer{text-align:center;padding:30px;color:var(--mut);font-size:.85rem}
-.rv{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+footer{text-align:center;padding:32px;color:var(--mut);font-size:.82rem;border-top:1px solid var(--bd)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
 .rv.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<div id="progress"></div>
-<div id="bg"><i></i><i></i><i></i></div>
+<div id="progress"></div><div id="grid"></div><div id="spot"></div>
 
-<nav>
-  <a href="#home" class="keep on">MJ</a>
-  <a href="#impact">Impact</a>
-  <a href="#experience">Experience</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact" class="keep">Contact</a>
-  <button id="theme" aria-label="Toggle theme">◐</button>
-</nav>
+<header class="top"><div class="wrap">
+  <a href="#home" class="logo">Mukund<i>.</i></a>
+  <nav>
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#work">Work</a><a href="#education">Education</a>
+    <a href="#contact" class="keep">Contact</a>
+    <button id="theme" aria-label="Toggle light and dark theme">◐</button>
+  </nav>
+</div></header>
 
-<header class="hero" id="home">
+<section class="hero" id="home">
   <div class="wrap">
     <div>
-      <div class="badge rv"><b></b> Open to new opportunities</div>
-      <h1 class="rv" style="--d:.1s">Hi, I'm <span class="grad">Mukund Jangid</span></h1>
-      <div class="type rv" style="--d:.2s" id="type" aria-label="Technical Product Manager"></div>
-      <p class="lead rv" style="--d:.3s">I turn complex engineering into products that ship and scale. AI platforms, cloud-native systems, and the strategy that connects them to business impact.</p>
-      <div class="cta rv" style="--d:.4s">
-        <a class="btn p" href="#contact">Let's talk →</a>
-        <a class="btn" href="Mukund_Jangid_TPM.pdf" target="_blank" rel="noopener">Resume ↓</a>
-        <a class="btn" href="https://www.linkedin.com/in/mukund-j-b01847b1/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <div class="status rv"><b></b>Bengaluru · Open to opportunities</div>
+      <h1 class="rv" style="--d:.08s">Mukund Jangid<em>.</em></h1>
+      <div class="role rv" style="--d:.16s" id="role" aria-label="AI Product and Engineering Leader"></div>
+      <p class="lead rv" style="--d:.24s">I build cloud-native, agentic AI platforms for regulated industries, from zero to enterprise scale. Inventor of a patented regulatory AI agent that cut safety-data-sheet generation from two weeks to minutes.</p>
+      <div class="cta rv" style="--d:.32s">
+        <a class="btn p" href="#contact">Get in touch</a>
+        <a class="btn" href="Mukund_Jangid_AI_Engineer.pdf" target="_blank" rel="noopener">Download resume</a>
+        <a class="btn" href="https://www.linkedin.com/in/mukund-jangid/" target="_blank" rel="noopener">LinkedIn ↗</a>
       </div>
     </div>
-    <div class="avatar rv" style="--d:.3s"><img src="assets/images/self.jpeg" alt="Mukund Jangid" width="460" height="460"></div>
+    <div class="photo rv" style="--d:.2s"><img src="assets/images/self.jpeg" alt="Portrait of Mukund Jangid" width="460" height="460"></div>
   </div>
-</header>
+</section>
 
-<section id="impact" style="padding-top:0">
+<div class="wrap">
+  <div class="facts rv">
+    <div class="fact"><b><span data-n="9">0</span>+</b><small>Years building platforms</small></div>
+    <div class="fact"><b><span data-n="40">0</span>%</b><small>Less legacy analysis effort via LLM agent</small></div>
+    <div class="fact"><b>2 wk → min</b><small>SDS generation time</small></div>
+    <div class="fact"><b>EP · JP · CN</b><small>Patent national phases</small></div>
+  </div>
+</div>
+
+<section id="about" class="about">
   <div class="wrap">
-    <div class="stats">
-      <div class="card stat rv"><b class="grad" data-n="10" data-s="+">0</b><span>Years experience</span></div>
-      <div class="card stat rv" style="--d:.08s"><b class="grad" data-n="1" data-s="">0</b><span>US WIPO PCT patent</span></div>
-      <div class="card stat rv" style="--d:.16s"><b class="grad" data-n="3" data-s="+">0</b><span>Cloud migrations</span></div>
-      <div class="card stat rv" style="--d:.24s"><b class="grad" data-n="2" data-s="M+">$0</b><span>Cost savings</span></div>
-    </div>
-
-    <div style="height:90px"></div>
-    <div class="eyebrow rv">Impact</div>
-    <h2 class="rv">Results, not responsibilities</h2>
-    <div class="wins">
-      <div class="card win rv"><b class="grad">99.5%</b><p>Faster provisioning: 2 days to 2 hours via Kubernetes operators and IaC.</p></div>
-      <div class="card win rv" style="--d:.08s"><b class="grad">40%</b><p>Less manual regulatory work with an agentic-AI platform, now patented (WO2024233807A1).</p></div>
-      <div class="card win rv" style="--d:.16s"><b class="grad">99.9%</b><p>Uptime on enterprise ML serving and multi-cloud workloads.</p></div>
-      <div class="card win rv" style="--d:.24s"><b class="grad">300%</b><p>Scalability gain after splitting a monolith into 15+ microservices.</p></div>
+    <div class="eyebrow rv">About</div>
+    <h2 class="rv">Product ownership with hands-on engineering depth</h2>
+    <p class="rv">Technical product and engineering leader with <strong>9+ years</strong> architecting distributed platforms across <strong>FinTech, Life Sciences and ChemTech</strong>. Deep expertise in <strong>agentic AI, machine learning, microservices, Kubernetes</strong> and platform engineering, paired with an <strong>MBA in analytics</strong> to turn complex regulatory and business problems into scalable, resilient technology.</p>
+    <div class="hl">
+      <div class="card rv"><b>Agentic AI</b><p>LLM agents with guardrails, RAG and human-in-the-loop control.</p></div>
+      <div class="card rv" style="--d:.07s"><b>Platform</b><p>Kubernetes, Golden Paths, GitOps and compliance-as-code.</p></div>
+      <div class="card rv" style="--d:.14s"><b>Regulated</b><p>Tax, chemicals, clinical trials and investment banking.</p></div>
     </div>
   </div>
 </section>
@@ -158,50 +179,113 @@ footer{text-align:center;padding:30px;color:var(--mut);font-size:.85rem}
 <section id="experience">
   <div class="wrap">
     <div class="eyebrow rv">Experience</div>
-    <h2 class="rv">From full-stack engineer to product leader</h2>
+    <h2 class="rv">Where I've built</h2>
     <div class="tl">
-      <div class="card job rv"><h3>Product Owner, Platform Transformation · Vertex Inc.</h3><div class="meta">Oct 2024 → Present · Remote, US</div><p>Leading <b>productivity engineering</b> and platform automation to improve developer experience at enterprise scale.</p><div class="tags"><span>Platform</span><span>Automation</span><span>DevEx</span></div></div>
-      <div class="card job rv"><h3>Forward Program Scholar · McKinsey & Company</h3><div class="meta">Feb 2025 → May 2025 · Remote</div><p>Business analytics consulting: dashboards, statistical modeling and process-optimisation recommendations.</p><div class="tags"><span>Analytics</span><span>Consulting</span></div></div>
-      <div class="card job rv"><h3>Platform & Site Reliability Engineer · Albert Invent</h3><div class="meta">Aug 2022 → Sep 2024 · Remote, California</div><p>Wrote <b>Kubernetes operators in Go/Python</b>, built ML serving on Knative + Istio, and invented the patented <b>AI regulatory automation</b> platform.</p><div class="tags"><span>Go</span><span>Kubernetes</span><span>Istio</span><span>ML Platform</span></div></div>
-      <div class="card job rv"><h3>Senior Software Engineer, Lead · Lifebit Biotech</h3><div class="meta">Dec 2021 → Aug 2022 · Remote, London</div><p>Broke a monolith into <b>15+ microservices</b>, cut Azure costs <b>35%</b>, and built Kafka genomic pipelines.</p><div class="tags"><span>Azure</span><span>Terraform</span><span>Kafka</span></div></div>
-      <div class="card job rv"><h3>R&D Engineer · Dassault Systèmes</h3><div class="meta">Jun 2020 → Dec 2021 · Pune</div><p>CI/CD and observability platform; <b>80%</b> less manual deployment effort.</p><div class="tags"><span>Jenkins</span><span>Puppet</span><span>Grafana</span></div></div>
-      <div class="card job rv"><h3>Associate Consultant · Capgemini</h3><div class="meta">May 2017 → Jun 2020 · Mumbai</div><p>Kafka ingestion handling <b>1M+ events/day</b> with GDPR-compliant financial data flows for Fortune 500 clients.</p><div class="tags"><span>Kafka</span><span>GDPR</span><span>Event-driven</span></div></div>
+
+      <article class="card job cur more rv">
+        <header><div><h3>AI Product Owner, Agentic Application Development</h3><div class="co">Vertex Inc.</div></div><div class="when">Aug 2024 – Present · Hyderabad</div></header>
+        <ul>
+          <li><b>Agentic AI platform:</b> API-first agent platform with LLM agents, guardrails and human-in-the-loop controls.</li>
+          <li><b>Code Analysis Agent:</b> maps legacy Java dependencies, cutting modernization analysis effort by <b>40%</b>.</li>
+          <li><b>Tax domain AI:</b> Tax Knowledge and Tax Rules agents using LLMs, RAG, embeddings and prompt engineering.</li>
+          <li><b>Product ownership:</b> strategy, architecture and delivery for modernizing a legacy tax platform to cloud-native, AI-enabled.</li>
+          <li><b>Cloud architecture:</b> Kubernetes microservices on Azure balancing scale, compliance, reliability and cost.</li>
+          <li><b>Compliance-as-code:</b> productized OPA policy enforcement for automated security and regulatory compliance.</li>
+          <li><b>Golden Paths:</b> self-service templates reduced service onboarding from days to hours.</li>
+          <li><b>Data &amp; delivery:</b> Flink streaming, Argo CD + Temporal multi-environment deployments, standardized CI/CD.</li>
+        </ul>
+        <button class="tog" type="button">Show more ↓</button>
+      </article>
+
+      <article class="card job more rv">
+        <header><div><h3>Technical Lead &amp; Founding Engineer</h3><div class="co">Albert Invent</div></div><div class="when">Jul 2022 – Aug 2024 · Bengaluru</div></header>
+        <ul>
+          <li><b>Chemist Agent:</b> led a patented AI system generating GHS-compliant SDSs, from 2 weeks to <b>minutes</b>.</li>
+          <li><b>Zero-to-one platform:</b> owned architecture and delivery of a chemical intelligence and compliance platform.</li>
+          <li><b>Graph backend:</b> chemical and regulatory relationships enabling <b>sub-second</b> compliance checks.</li>
+          <li><b>Enterprise readiness:</b> CI/CD, security controls and SOC 2 readiness; prototype to deployments in China and Taiwan.</li>
+          <li><b>ML workflows:</b> embeddings, retrieval and regulatory knowledge bases for jurisdiction-specific rules.</li>
+          <li><b>Regulatory intelligence:</b> converted expert chemist knowledge into validated, human-reviewed workflows.</li>
+          <li><b>Kubernetes:</b> Go/Python controllers and operators for provisioning, access control, sandboxing and resets.</li>
+          <li><b>ML infrastructure:</b> microservices and ML workloads on Knative and Istio.</li>
+        </ul>
+        <button class="tog" type="button">Show more ↓</button>
+      </article>
+
+      <article class="card job rv">
+        <header><div><h3>R&amp;D Engineer, Life Sciences / Digital Twin</h3><div class="co">Dassault Systèmes (Medidata)</div></div><div class="when">May 2020 – Nov 2021 · Pune</div></header>
+        <ul>
+          <li><b>Digital human twin platform:</b> integrated enterprise wearables into medical sensor data profiles.</li>
+          <li><b>Edge to cloud:</b> high-throughput real-time telemetry ingestion; fault-tolerant Kafka pipelines for decentralized clinical trials.</li>
+          <li><b>DevOps:</b> Jenkins CI/CD, Puppet and Bash automation, Grafana monitoring.</li>
+        </ul>
+      </article>
+
+      <article class="card job rv">
+        <header><div><h3>Senior Consultant, Full Stack Engineer</h3><div class="co">Capgemini (Morgan Stanley)</div></div><div class="when">Apr 2017 – May 2020 · Pune</div></header>
+        <ul>
+          <li><b>Low-latency trading:</b> Java/Scala settlement apps tuned for microsecond-level latency.</li>
+          <li><b>Data engineering:</b> ingestion, migration and ETL pipelines; reusable sync tools for financial data integrity.</li>
+          <li><b>Governance:</b> supported CCPA and data privacy compliance in a high-reliability banking environment.</li>
+        </ul>
+      </article>
     </div>
   </div>
 </section>
 
 <section id="skills">
   <div class="wrap">
-    <div class="eyebrow rv">Toolbox</div>
-    <h2 class="rv">What I work with</h2>
+    <div class="eyebrow rv">Skills</div>
+    <h2 class="rv">Toolbox</h2>
     <div class="skills">
-      <div class="card rv"><h3>Product</h3><div class="tags"><span>Strategy</span><span>Roadmapping</span><span>Stakeholders</span><span>Digital Transformation</span></div></div>
-      <div class="card rv" style="--d:.06s"><h3>Cloud & DevOps</h3><div class="tags"><span>Kubernetes</span><span>AWS</span><span>Azure</span><span>Terraform</span><span>ArgoCD</span><span>Helm</span><span>Docker</span></div></div>
-      <div class="card rv" style="--d:.12s"><h3>AI & Data</h3><div class="tags"><span>Agentic AI</span><span>MCP</span><span>TensorFlow</span><span>PyTorch</span><span>Kubeflow</span><span>Kafka</span><span>Temporal</span></div></div>
-      <div class="card rv" style="--d:.18s"><h3>Engineering</h3><div class="tags"><span>Go</span><span>Python</span><span>Java / Spring Boot</span><span>Node.js</span><span>Bash</span></div></div>
-      <div class="card rv" style="--d:.24s"><h3>Observability</h3><div class="tags"><span>Prometheus</span><span>Grafana</span><span>ELK</span><span>DataDog</span></div></div>
+      <div class="card rv"><h3>Agentic AI</h3><div class="chips"><span>LangChain</span><span>LangGraph</span><span>LangSmith</span><span>MCP</span><span>Multi-agent orchestration</span><span>RAG</span><span>Tool calling</span><span>LLM evals</span><span>Agent memory</span><span>Human-in-the-loop</span><span>Microsoft Agent Framework</span></div></div>
+      <div class="card rv" style="--d:.06s"><h3>Models &amp; Data</h3><div class="chips"><span>OpenAI API</span><span>Hugging Face</span><span>Ollama</span><span>Azure Foundry</span><span>Pinecone</span><span>ChromaDB</span><span>PostgreSQL</span><span>Aurora</span><span>MongoDB</span><span>DynamoDB</span></div></div>
+      <div class="card rv" style="--d:.12s"><h3>Architecture</h3><div class="chips"><span>Microservices</span><span>Event-driven</span><span>DDD</span><span>SOLID</span><span>Strangler Fig</span><span>Serverless</span></div></div>
+      <div class="card rv" style="--d:.18s"><h3>Languages &amp; Frameworks</h3><div class="chips"><span>Python</span><span>Go</span><span>Java 17+</span><span>Spring Boot</span><span>C# / .NET Core</span><span>Node.js</span><span>React</span><span>JavaScript</span><span>SQL</span></div></div>
+      <div class="card rv" style="--d:.24s"><h3>Cloud &amp; DevOps</h3><div class="chips"><span>Azure / AKS</span><span>AWS</span><span>GCP</span><span>Kubernetes</span><span>Docker</span><span>Terraform</span><span>Argo CD</span><span>GitHub Actions</span><span>Jenkins</span></div></div>
     </div>
   </div>
 </section>
 
-<section id="projects">
+<section id="work">
   <div class="wrap">
-    <div class="eyebrow rv">Selected work</div>
-    <h2 class="rv">Things I've shipped</h2>
-    <div class="projects">
-      <a class="card proj rv" href="https://patents.google.com/patent/WO2024233807A1" target="_blank" rel="noopener"><div class="k grad">40%</div><h3>AI Regulatory Automation ↗</h3><p>Agentic-AI platform that generates regulatory documentation. Patent WO2024233807A1.</p><div class="tags"><span>Python</span><span>MCP</span><span>Kubernetes</span></div></a>
-      <div class="card proj rv" style="--d:.08s"><div class="k grad">99.9%</div><h3>Multi-Cloud Migration</h3><p>On-prem to AWS + Azure with 30% lower cost and 99.9% uptime.</p><div class="tags"><span>AWS</span><span>Azure</span><span>Terraform</span></div></div>
-      <div class="card proj rv" style="--d:.16s"><div class="k grad">1000+</div><h3>Multi-Tenant SaaS</h3><p>Built from scratch for 1000+ enterprise customers.</p><div class="tags"><span>Node.js</span><span>React</span><span>Postgres</span></div></div>
-      <div class="card proj rv" style="--d:.24s"><div class="k grad">60%</div><h3>Monolith → Microservices</h3><p>15-year-old system modernised: 60% faster, 80% quicker deploys.</p><div class="tags"><span>Docker</span><span>API Gateway</span><span>Events</span></div></div>
+    <div class="eyebrow rv">Patent &amp; ventures</div>
+    <h2 class="rv">Things I've invented and built</h2>
+
+    <div class="card patent rv">
+      <div class="eyebrow">Patent · WIPO PCT WO2024233807A1</div>
+      <h3>System and Method for Automated Safety Data Sheet Generation</h3>
+      <p>An AI-driven method of generating regulatory outputs. Published under WIPO PCT with national-phase publications in Europe, Japan and China.</p>
+      <div class="cta"><a class="btn p" href="https://patents.google.com/patent/WO2024233807A1" target="_blank" rel="noopener">Google Patents ↗</a><a class="btn" href="https://register.epo.org/application?number=EP24804282&tab=main" target="_blank" rel="noopener">EPO register ↗</a></div>
     </div>
 
-    <div style="height:70px"></div>
+    <div class="projects">
+      <div class="card proj rv"><div class="out">Venture</div><h3>FormsAI</h3><p>A registry for every form a business touches: schema extraction from live portals, record mapping, bulk submission with retries and idempotency, schema-drift detection and a shared human exception queue.</p><div class="chips"><span>Automation</span><span>Schema drift</span><span>Human review</span></div></div>
+      <div class="card proj rv" style="--d:.06s"><div class="out">Venture</div><h3>Agent observability &amp; guardrails</h3><p>Step-level traces of every model call, tool run and token cost. Guardrails redact PII, block prompt injection, detect loops and halt runaway spend.</p><div class="chips"><span>Tracing</span><span>Guardrails</span><span>Cost control</span></div></div>
+      <div class="card proj rv" style="--d:.12s"><div class="out">Venture</div><h3>Page agent</h3><p>A Playwright-driven agent that crawls, extracts, fills and submits on real websites with vision + DOM reasoning and self-healing selectors. Every run replays as video.</p><div class="chips"><span>Playwright</span><span>Vision</span><span>Replay</span></div></div>
+      <div class="card proj rv" style="--d:.18s"><div class="out">Venture · ~380 ms median response</div><h3>AI voice agents</h3><p>Natural conversations with barge-in handling, live mid-call database lookups, warm transfer to humans, and automatic summaries and CRM writebacks.</p><div class="chips"><span>Voice</span><span>Real-time</span><span>CRM</span></div></div>
+    </div>
+
+    <div style="height:56px"></div>
+    <div class="eyebrow rv">Product case studies</div>
+    <h2 class="rv">Outcomes</h2>
+    <div class="projects">
+      <div class="card proj rv"><div class="out">Faster, safer modernization</div><h3>Sales &amp; Use Tax Platform</h3><p>Defined vision and metrics for moving a monolithic tax system to a compliant, cloud-native platform with self-service onboarding and multi-environment parity.</p></div>
+      <div class="card proj rv" style="--d:.06s"><div class="out">Weeks to minutes</div><h3>Automated SDS</h3><p>Productized regulatory rules into enterprise workflows, with multi-tenant sandboxing to test scenarios safely.</p></div>
+      <div class="card proj rv" style="--d:.12s"><div class="out">Self-service cohorts</div><h3>Genomics Research Platform</h3><p>Turned researcher workflows into cohort definition, execution and analysis, with access control, isolation and auditability.</p></div>
+      <div class="card proj rv" style="--d:.18s"><div class="out">Near real-time vitals</div><h3>Sensor Cloud Data Fabric</h3><p>Unified sensor and clinical analytics for decentralized trials, with operational dashboards and data-quality metrics.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
     <div class="eyebrow rv">Education</div>
-    <h2 class="rv">Credentials</h2>
+    <h2 class="rv">Background</h2>
     <div class="edu">
-      <div class="card rv"><h3>Executive MBA · IIM Kozhikode</h3><small>2022 – 2024</small><p style="color:var(--mut);font-size:.9rem;margin-top:8px">Product Management & Digital Transformation.</p></div>
-      <div class="card rv" style="--d:.08s"><h3>B.Tech Computer Science · MNIT Jaipur</h3><small>2013 – 2017</small><p style="color:var(--mut);font-size:.9rem;margin-top:8px">CS fundamentals, software engineering, system design.</p></div>
-      <div class="card rv" style="--d:.16s"><h3>Certifications</h3><div class="tags"><span>SAS Data Scientist</span><span>SAS Big Data</span><span>INFORMS CAP</span><span>NSE Financial Markets</span><span>Google Analytics</span></div></div>
+      <div class="card rv"><small>2022 – 2024 · Kozhikode</small><h3>Executive MBA, Supply Chain &amp; Business Analytics</h3><p>Indian Institute of Management · GPA 3.7 / 5.0</p></div>
+      <div class="card rv" style="--d:.07s"><small>2013 – 2017 · Jaipur</small><h3>B.Tech, Computer Science</h3><p>Swami Keshvanand Institute of Technology · GPA 8.2 / 10</p></div>
+      <div class="card rv" style="--d:.14s"><small>Languages</small><h3>English (C2) · German (A1)</h3><p>Fluent professional English.</p></div>
     </div>
   </div>
 </section>
@@ -210,52 +294,53 @@ footer{text-align:center;padding:30px;color:var(--mut);font-size:.85rem}
   <div class="wrap">
     <div class="card rv">
       <div class="eyebrow">Contact</div>
-      <h2>Let's build something <span class="grad">great</span></h2>
-      <p>AI platforms, modernisation or product leadership. I'd love to hear about it.</p>
+      <h2>Let's build something that matters</h2>
+      <p>Agentic AI, platform modernization or product leadership. I'm happy to talk.</p>
       <div class="cta">
-        <a class="btn p" href="mailto:mukund.jangid95@gmail.com">Email me</a>
-        <a class="btn" href="https://www.linkedin.com/in/mukund-j-b01847b1/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn p" href="mailto:mukund.jangid95@gmail.com">mukund.jangid95@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/mukund-jangid/" target="_blank" rel="noopener">LinkedIn ↗</a>
         <a class="btn" href="https://github.com/mjangid7" target="_blank" rel="noopener">GitHub ↗</a>
       </div>
     </div>
   </div>
 </section>
-<footer>© <span id="yr"></span> Mukund Jangid</footer>
+<footer>© <span id="yr"></span> Mukund Jangid · Bengaluru, India</footer>
 
 <script>
 (()=>{
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
 $('#yr').textContent=new Date().getFullYear();
-// theme
 const root=document.documentElement;
 try{const t=localStorage.getItem('theme');if(t)root.dataset.theme=t}catch(e){}
 $('#theme').onclick=()=>{const t=root.dataset.theme==='dark'?'light':'dark';root.dataset.theme=t;try{localStorage.setItem('theme',t)}catch(e){}};
-// typewriter
-const words=['Technical Product Manager','AI Strategist','Platform Engineer','Patent Holder'];
-const el=$('#type');let w=0,i=0,del=false;
-const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+// rotating role line
+const words=['AI Product & Engineering Leader','Agentic AI Platforms','Cloud-native Architecture','Patent Inventor'];
+const el=$('#role');let w=0,i=0,del=false;
 if(reduce)el.textContent=words[0];else(function tick(){
   const cur=words[w];el.textContent=cur.slice(0,i);
-  if(!del&&i===cur.length){del=true;return setTimeout(tick,1400)}
+  if(!del&&i===cur.length){del=true;return setTimeout(tick,1600)}
   if(del&&i===0){del=false;w=(w+1)%words.length}
-  i+=del?-1:1;setTimeout(tick,del?35:70);
+  i+=del?-1:1;setTimeout(tick,del?28:60);
 })();
-// reveal + counters
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
 $$('.rv').forEach(e=>io.observe(e));
+// counters
 const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);
-  const t=e.target,n=+t.dataset.n,s=t.dataset.s,p=t.textContent.startsWith('$')?'$':'';
-  if(reduce){t.textContent=p+n+s;return}
-  const st=performance.now();(function f(now){const k=Math.min((now-st)/1400,1);t.textContent=p+Math.round(n*(1-Math.pow(1-k,3)))+(k<1?'':s);if(k<1)requestAnimationFrame(f)})(st);
+  const t=e.target,n=+t.dataset.n;if(reduce){t.textContent=n;return}
+  const st=performance.now();(function f(now){const k=Math.min((now-st)/1200,1);t.textContent=Math.round(n*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f)})(st);
 }),{threshold:.6});
 $$('[data-n]').forEach(e=>co.observe(e));
-// card spotlight
-$$('.card').forEach(c=>c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--mx',e.clientX-r.left+'px');c.style.setProperty('--my',e.clientY-r.top+'px')}));
+// expandable jobs
+$$('.tog').forEach(b=>b.onclick=()=>{const j=b.closest('.job');const o=j.classList.toggle('open');b.textContent=o?'Show less ↑':'Show more ↓'});
+// cursor glow
+if(!reduce)addEventListener('pointermove',e=>{const s=$('#spot').style;s.setProperty('--x',e.clientX+'px');s.setProperty('--y',e.clientY+'px')},{passive:true});
 // progress + active nav
-const links=$$('nav a[href^="#"]'),secs=links.map(a=>$(a.getAttribute('href')));
+const links=$$('nav a[href^="#"]:not(.keep)'),secs=links.map(a=>$(a.getAttribute('href')));
 addEventListener('scroll',()=>{
   const h=document.documentElement;$('#progress').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';
-  let idx=0;secs.forEach((s,k)=>{if(s.getBoundingClientRect().top<innerHeight*.4)idx=k});
+  let idx=-1;secs.forEach((s,k)=>{if(s.getBoundingClientRect().top<innerHeight*.35)idx=k});
   links.forEach((a,k)=>a.classList.toggle('on',k===idx));
 },{passive:true});
 })();
