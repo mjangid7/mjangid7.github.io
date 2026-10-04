@@ -1,2032 +1,264 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mukund Jangid - Technical Product Manager & AI Strategist</title>
-    <meta name="description" content="Technical Product Manager specializing in AI-powered platforms, DevOps, and enterprise-scale solutions">
-    <meta name="author" content="Mukund Jangid">
-    <meta name="keywords" content="technical product manager, AI strategist, platform engineering, DevOps, full stack developer">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/modal-popups.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mukund Jangid · Technical Product Manager & AI Strategist</title>
+<meta name="description" content="Technical Product Manager building AI-powered platforms. 10+ years, IIM Kozhikode EMBA, US WIPO PCT patent holder.">
+<meta property="og:title" content="Mukund Jangid · Technical Product Manager & AI Strategist">
+<meta property="og:description" content="AI platforms, platform engineering and product leadership. 10+ years. Patent holder.">
+<meta property="og:image" content="https://mjangid7.github.io/assets/images/self.jpeg">
+<meta name="theme-color" content="#07070d">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%236366f1'/><text x='50' y='68' font-size='56' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'>MJ</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07070d;--bg2:#0e0e18;--card:rgba(255,255,255,.04);--bd:rgba(255,255,255,.09);--tx:#f2f2f8;--mut:#9a9ab0;--a:#6366f1;--b:#22d3ee;--c:#e879f9;--grad:linear-gradient(120deg,var(--a),var(--b) 55%,var(--c))}
+:root[data-theme=light]{--bg:#f7f7fb;--bg2:#fff;--card:rgba(0,0,0,.035);--bd:rgba(0,0,0,.09);--tx:#12121c;--mut:#5d5d72}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6;overflow-x:hidden;transition:background .3s,color .3s}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:90px 0}
+.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% auto;animation:flow 6s linear infinite}
+@keyframes flow{to{background-position:200% center}}
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--grad);z-index:100}
+#bg{position:fixed;inset:0;z-index:-1;overflow:hidden}
+#bg i{position:absolute;border-radius:50%;filter:blur(90px);opacity:.28;animation:float 18s ease-in-out infinite}
+#bg i:nth-child(1){width:480px;height:480px;background:var(--a);top:-120px;left:-100px}
+#bg i:nth-child(2){width:420px;height:420px;background:var(--b);top:35%;right:-120px;animation-delay:-6s}
+#bg i:nth-child(3){width:380px;height:380px;background:var(--c);bottom:-120px;left:30%;animation-delay:-12s}
+:root[data-theme=light] #bg i{opacity:.18}
+@keyframes float{50%{transform:translate(60px,-50px) scale(1.15)}}
+nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:4px;padding:6px;background:color-mix(in srgb,var(--bg2) 70%,transparent);backdrop-filter:blur(16px);border:1px solid var(--bd);border-radius:999px;max-width:calc(100vw - 24px)}
+nav a,nav button{font:500 .85rem Inter;padding:8px 14px;border-radius:999px;color:var(--mut);background:none;border:0;cursor:pointer;transition:.2s;white-space:nowrap}
+nav a:hover,nav a.on,nav button:hover{color:var(--tx);background:var(--card)}
+nav a.on{background:var(--a);color:#fff}
+@media(max-width:640px){nav a:not(.keep){display:none}}
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:110px}
+.hero .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:center}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.avatar{order:-1;max-width:220px}}
+.badge{display:inline-flex;align-items:center;gap:8px;font:500 .8rem 'JetBrains Mono';padding:6px 14px;border:1px solid var(--bd);border-radius:999px;background:var(--card);color:var(--mut);margin-bottom:22px}
+.badge b{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 0 #22c55e;animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px transparent}}
+h1{font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.05;font-weight:800;letter-spacing:-.03em}
+.type{font:500 1.15rem 'JetBrains Mono';color:var(--b);margin:18px 0;min-height:1.8em}
+.type::after{content:'▍';animation:blink 1s steps(1) infinite;margin-left:2px}
+@keyframes blink{50%{opacity:0}}
+.lead{color:var(--mut);max-width:560px;font-size:1.05rem}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:12px;font-weight:600;font-size:.95rem;border:1px solid var(--bd);transition:transform .2s,box-shadow .2s;background:var(--card)}
+.btn:hover{transform:translateY(-3px)}
+.btn.p{background:var(--grad);border:0;color:#fff;box-shadow:0 10px 30px -8px var(--a)}
+.avatar{position:relative;aspect-ratio:1;width:100%;justify-self:center}
+.avatar::before{content:'';position:absolute;inset:-6px;border-radius:50%;background:conic-gradient(var(--a),var(--b),var(--c),var(--a));animation:spin 8s linear infinite;filter:blur(2px)}
+.avatar img{position:relative;width:100%;height:100%;object-fit:cover;border-radius:50%;border:6px solid var(--bg)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:70px}
+@media(max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{padding:22px;text-align:center}
+.stat b{display:block;font-size:2.2rem;font-weight:800}
+.stat span{color:var(--mut);font-size:.85rem}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;backdrop-filter:blur(8px);transition:transform .25s,border-color .25s,box-shadow .25s;position:relative;overflow:hidden}
+.card::after{content:'';position:absolute;inset:0;background:radial-gradient(300px circle at var(--mx,50%) var(--my,50%),rgba(99,102,241,.16),transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none}
+.card:hover{border-color:color-mix(in srgb,var(--a) 60%,transparent);transform:translateY(-4px)}
+.card:hover::after{opacity:1}
+.eyebrow{font:500 .8rem 'JetBrains Mono';color:var(--b);letter-spacing:.12em;text-transform:uppercase}
+h2{font-size:clamp(1.8rem,4vw,2.7rem);font-weight:800;letter-spacing:-.02em;margin:8px 0 40px}
+.wins{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.win{padding:26px}
+.win b{display:block;font-size:2rem;font-weight:800;margin-bottom:6px}
+.win p{color:var(--mut);font-size:.92rem}
+.tl{position:relative;padding-left:28px;border-left:2px solid var(--bd);display:grid;gap:20px}
+.job{padding:24px;position:relative}
+.job::before{content:'';position:absolute;left:-37px;top:30px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--a);box-shadow:0 0 14px var(--a)}
+.job h3{font-size:1.1rem}
+.job .meta{color:var(--mut);font-size:.85rem;margin:2px 0 10px;font-family:'JetBrains Mono'}
+.job p{color:var(--mut);font-size:.93rem}
+.job p b{color:var(--tx);font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.tags span{font:.78rem 'JetBrains Mono';padding:4px 11px;border-radius:8px;background:var(--card);border:1px solid var(--bd);color:var(--mut);transition:.2s}
+.tags span:hover{color:var(--tx);border-color:var(--a)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.skills .card{padding:24px}
+.skills h3{font-size:.95rem;margin-bottom:4px}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.proj{padding:28px;display:flex;flex-direction:column}
+.proj .k{font:700 2.4rem Inter}
+.proj h3{margin:6px 0 8px}
+.proj p{color:var(--mut);font-size:.92rem;flex:1}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.edu .card{padding:24px}
+.edu small{color:var(--mut);font-family:'JetBrains Mono';font-size:.78rem}
+.contact{text-align:center}
+.contact .card{padding:64px 24px;background:linear-gradient(135deg,rgba(99,102,241,.16),rgba(34,211,238,.08))}
+.contact h2{margin-bottom:12px}
+.contact p{color:var(--mut);margin-bottom:28px}
+.contact .cta{justify-content:center}
+footer{text-align:center;padding:30px;color:var(--mut);font-size:.85rem}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
-    <!-- Skip to main content link for accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    
-    <!-- Loading Screen -->
-    <div id="loading-screen" class="loading-screen" role="status" aria-live="polite" aria-label="Page loading">
-        <div class="loading-content">
-            <div class="loading-logo">
-                <div class="loading-spinner" aria-hidden="true"></div>
-            </div>
-            <h2 class="loading-text">Mukund Jangid</h2>
-            <p class="loading-subtitle">Technical Product Manager</p>
-        </div>
+<div id="progress"></div>
+<div id="bg"><i></i><i></i><i></i></div>
+
+<nav>
+  <a href="#home" class="keep on">MJ</a>
+  <a href="#impact">Impact</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact" class="keep">Contact</a>
+  <button id="theme" aria-label="Toggle theme">◐</button>
+</nav>
+
+<header class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <div class="badge rv"><b></b> Open to new opportunities</div>
+      <h1 class="rv" style="--d:.1s">Hi, I'm <span class="grad">Mukund Jangid</span></h1>
+      <div class="type rv" style="--d:.2s" id="type" aria-label="Technical Product Manager"></div>
+      <p class="lead rv" style="--d:.3s">I turn complex engineering into products that ship and scale. AI platforms, cloud-native systems, and the strategy that connects them to business impact.</p>
+      <div class="cta rv" style="--d:.4s">
+        <a class="btn p" href="#contact">Let's talk →</a>
+        <a class="btn" href="Mukund_Jangid_TPM.pdf" target="_blank" rel="noopener">Resume ↓</a>
+        <a class="btn" href="https://www.linkedin.com/in/mukund-j-b01847b1/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+    <div class="avatar rv" style="--d:.3s"><img src="assets/images/self.jpeg" alt="Mukund Jangid" width="460" height="460"></div>
+  </div>
+</header>
+
+<section id="impact" style="padding-top:0">
+  <div class="wrap">
+    <div class="stats">
+      <div class="card stat rv"><b class="grad" data-n="10" data-s="+">0</b><span>Years experience</span></div>
+      <div class="card stat rv" style="--d:.08s"><b class="grad" data-n="1" data-s="">0</b><span>US WIPO PCT patent</span></div>
+      <div class="card stat rv" style="--d:.16s"><b class="grad" data-n="3" data-s="+">0</b><span>Cloud migrations</span></div>
+      <div class="card stat rv" style="--d:.24s"><b class="grad" data-n="2" data-s="M+">$0</b><span>Cost savings</span></div>
     </div>
 
-    <!-- Custom Cursor -->
-    <div class="cursor-dot" aria-hidden="true"></div>
-    <div class="cursor-outline" aria-hidden="true"></div>
-    
-    <!-- Navigation -->
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Mukund Jangid</h2>
-                <div class="logo-dot" aria-hidden="true"></div>
-            </div>
-            
-            <!-- Breadcrumb Navigation -->
-            <div class="breadcrumb-nav" id="breadcrumb-nav" aria-label="Breadcrumb" style="display: none;">
-                <a href="#home" class="breadcrumb-link">
-                    <i class="fas fa-home"></i>
-                    <span>Home</span>
-                </a>
-                <span class="breadcrumb-separator" aria-hidden="true">/</span>
-                <span class="breadcrumb-current" id="breadcrumb-current">About</span>
-            </div>
-            
-            <ul class="nav-menu" role="menubar">
-                <li class="nav-item" role="none">
-                    <a href="#home" class="nav-link active" role="menuitem" aria-describedby="nav-home-desc">
-                        <span class="nav-text">Home</span>
-                    </a>
-                    <span id="nav-home-desc" class="sr-only">Go to homepage section</span>
-                </li>
-                <li class="nav-item" role="none">
-                    <a href="#about" class="nav-link" role="menuitem" aria-describedby="nav-about-desc">
-                        <span class="nav-text">About</span>
-                    </a>
-                    <span id="nav-about-desc" class="sr-only">Go to about me section</span>
-                </li>
-                <li class="nav-item" role="none">
-                    <a href="#experience" class="nav-link" role="menuitem" aria-describedby="nav-experience-desc">
-                        <span class="nav-text">Experience</span>
-                    </a>
-                    <span id="nav-experience-desc" class="sr-only">Go to professional experience section</span>
-                </li>
-                <li class="nav-item" role="none">
-                    <a href="#skills" class="nav-link" role="menuitem" aria-describedby="nav-skills-desc">
-                        <span class="nav-text">Skills</span>
-                    </a>
-                    <span id="nav-skills-desc" class="sr-only">Go to skills and competencies section</span>
-                </li>
-                <li class="nav-item" role="none">
-                    <a href="#education" class="nav-link" role="menuitem" aria-describedby="nav-education-desc">
-                        <span class="nav-text">Education</span>
-                    </a>
-                    <span id="nav-education-desc" class="sr-only">Go to education and certifications section</span>
-                </li>
-                <li class="nav-item" role="none">
-                    <a href="#projects" class="nav-link" role="menuitem" aria-describedby="nav-projects-desc">
-                        <span class="nav-text">Projects</span>
-                    </a>
-                    <span id="nav-projects-desc" class="sr-only">Go to featured projects section</span>
-                </li>
-                <li class="nav-item" role="none">
-                    <a href="#github-activity" class="nav-link" role="menuitem" aria-describedby="nav-github-desc">
-                        <span class="nav-text">GitHub</span>
-                    </a>
-                    <span id="nav-github-desc" class="sr-only">Go to GitHub activity section</span>
-                </li>
-                <li class="nav-item" role="none">
-                    <a href="#contact" class="nav-link" role="menuitem" aria-describedby="nav-contact-desc">
-                        <span class="nav-text">Contact</span>
-                    </a>
-                    <span id="nav-contact-desc" class="sr-only">Go to contact information section</span>
-                </li>
-            </ul>
-            <div class="nav-actions">
-                <a href="https://cal.com/mukund-jangid/30min" 
-                   target="_blank" 
-                   class="btn btn-sm btn-outline calendar-link"
-                   aria-label="Book a 30-minute meeting">
-                    <i class="fas fa-calendar-alt"></i>
-                    <span>Book Meeting</span>
-                </a>
-                <button id="theme-toggle" class="theme-toggle" 
-                        aria-label="Switch to blue light filter mode" 
-                        aria-describedby="theme-toggle-desc"
-                        type="button">
-                    <i class="fas fa-eye" id="theme-icon" aria-hidden="true"></i>
-                    <span class="sr-only" id="theme-toggle-desc">Toggle between light, blue light filter, and dark themes</span>
-                </button>
-                <button class="nav-toggle" 
-                        aria-label="Toggle navigation menu" 
-                        aria-expanded="false" 
-                        aria-controls="nav-menu"
-                        type="button">
-                    <span class="bar" aria-hidden="true"></span>
-                    <span class="bar" aria-hidden="true"></span>
-                    <span class="bar" aria-hidden="true"></span>
-                    <span class="sr-only">Menu</span>
-                </button>
-            </div>
-        </div>
-    </nav>
+    <div style="height:90px"></div>
+    <div class="eyebrow rv">Impact</div>
+    <h2 class="rv">Results, not responsibilities</h2>
+    <div class="wins">
+      <div class="card win rv"><b class="grad">99.5%</b><p>Faster provisioning: 2 days to 2 hours via Kubernetes operators and IaC.</p></div>
+      <div class="card win rv" style="--d:.08s"><b class="grad">40%</b><p>Less manual regulatory work with an agentic-AI platform, now patented (WO2024233807A1).</p></div>
+      <div class="card win rv" style="--d:.16s"><b class="grad">99.9%</b><p>Uptime on enterprise ML serving and multi-cloud workloads.</p></div>
+      <div class="card win rv" style="--d:.24s"><b class="grad">300%</b><p>Scalability gain after splitting a monolith into 15+ microservices.</p></div>
+    </div>
+  </div>
+</section>
 
-    <!-- Main Content -->
-    <main id="main-content">
-        <!-- Home Section (Landing Page) -->
-        <section id="home" class="hero" aria-labelledby="hero-title">
-            <div class="hero-bg" aria-hidden="true">
-                <div class="hero-particles"></div>
-                <div class="hero-grid"></div>
-                <div class="hero-gradient-orbs">
-                    <div class="gradient-orb orb-1"></div>
-                    <div class="gradient-orb orb-2"></div>
-                    <div class="gradient-orb orb-3"></div>
-                </div>
-                <div class="hero-mesh"></div>
-            </div>
-            
-            <div class="hero-container">
-                <div class="hero-content">
-                    <div class="hero-badge" role="status" aria-live="polite">
-                        <span class="badge-text">Available for New Opportunities</span>
-                        <div class="badge-pulse" aria-hidden="true"></div>
-                    </div>
-                    <h1 id="hero-title" class="hero-title">
-                        <span class="title-line">Technical</span>
-                        <span class="title-line gradient-text">Product Manager</span>
-                        <span class="title-line">& AI Strategist</span>
-                    </h1>
-                    <p class="hero-subtitle">
-                        Transforming complex technical challenges into strategic product solutions. 
-                        Specialized in AI-powered platforms, enterprise-scale architectures, and 
-                        bridging the gap between engineering excellence and business impact.
-                    </p>
-                    <div class="hero-stats" role="region" aria-labelledby="stats-heading">
-                        <h2 id="stats-heading" class="sr-only">Professional Statistics</h2>
-                        <div class="stat-item">
-                            <h3 aria-describedby="stat-years-desc">10+</h3>
-                            <p id="stat-years-desc">Years Experience</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3 aria-describedby="stat-projects-desc">7+</h3>
-                            <p id="stat-projects-desc">Projects Delivered</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3 aria-describedby="stat-patent-desc">1</h3>
-                            <p id="stat-patent-desc">US WIPO PCT Patent</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3 aria-describedby="stat-migrations-desc">3+</h3>
-                            <p id="stat-migrations-desc">Cloud Migrations</p>
-                        </div>
-                    </div>
-                    <div class="hero-cta">
-                        <a href="#about" class="btn btn-primary" aria-describedby="cta-next-desc">
-                            <span>Discover My Journey</span>
-                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                        </a>
-                        <span id="cta-next-desc" class="sr-only">Navigate to about section</span>
+<section id="experience">
+  <div class="wrap">
+    <div class="eyebrow rv">Experience</div>
+    <h2 class="rv">From full-stack engineer to product leader</h2>
+    <div class="tl">
+      <div class="card job rv"><h3>Product Owner, Platform Transformation · Vertex Inc.</h3><div class="meta">Oct 2024 → Present · Remote, US</div><p>Leading <b>productivity engineering</b> and platform automation to improve developer experience at enterprise scale.</p><div class="tags"><span>Platform</span><span>Automation</span><span>DevEx</span></div></div>
+      <div class="card job rv"><h3>Forward Program Scholar · McKinsey & Company</h3><div class="meta">Feb 2025 → May 2025 · Remote</div><p>Business analytics consulting: dashboards, statistical modeling and process-optimisation recommendations.</p><div class="tags"><span>Analytics</span><span>Consulting</span></div></div>
+      <div class="card job rv"><h3>Platform & Site Reliability Engineer · Albert Invent</h3><div class="meta">Aug 2022 → Sep 2024 · Remote, California</div><p>Wrote <b>Kubernetes operators in Go/Python</b>, built ML serving on Knative + Istio, and invented the patented <b>AI regulatory automation</b> platform.</p><div class="tags"><span>Go</span><span>Kubernetes</span><span>Istio</span><span>ML Platform</span></div></div>
+      <div class="card job rv"><h3>Senior Software Engineer, Lead · Lifebit Biotech</h3><div class="meta">Dec 2021 → Aug 2022 · Remote, London</div><p>Broke a monolith into <b>15+ microservices</b>, cut Azure costs <b>35%</b>, and built Kafka genomic pipelines.</p><div class="tags"><span>Azure</span><span>Terraform</span><span>Kafka</span></div></div>
+      <div class="card job rv"><h3>R&D Engineer · Dassault Systèmes</h3><div class="meta">Jun 2020 → Dec 2021 · Pune</div><p>CI/CD and observability platform; <b>80%</b> less manual deployment effort.</p><div class="tags"><span>Jenkins</span><span>Puppet</span><span>Grafana</span></div></div>
+      <div class="card job rv"><h3>Associate Consultant · Capgemini</h3><div class="meta">May 2017 → Jun 2020 · Mumbai</div><p>Kafka ingestion handling <b>1M+ events/day</b> with GDPR-compliant financial data flows for Fortune 500 clients.</p><div class="tags"><span>Kafka</span><span>GDPR</span><span>Event-driven</span></div></div>
+    </div>
+  </div>
+</section>
 
-                        <a href="https://www.linkedin.com/in/mukund-j-b01847b1/" 
-                           target="_blank" 
-                           rel="noopener noreferrer"
-                           class="btn btn-linkedin" 
-                           aria-describedby="cta-linkedin-desc">
-                            <span>LinkedIn Profile</span>
-                            <i class="fab fa-linkedin" aria-hidden="true"></i>
-                        </a>
-                        <span id="cta-linkedin-desc" class="sr-only">Visit Mukund Jangid's LinkedIn profile (opens in new tab)</span>
-                    </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="profile-container">
-                        <div class="profile-image">
-                            <img src="assets/images/self.jpeg" 
-                                 alt="Professional headshot of Mukund Jangid, Technical Product Manager and AI Strategist" 
-                                 class="profile-img"
-                                 loading="eager"
-                                 width="300" 
-                                 height="300">
-                            <div class="profile-ring" aria-hidden="true"></div>
-                            <div class="profile-glow" aria-hidden="true"></div>
-                        </div>
-                    </div>
-                    <div class="floating-elements" aria-hidden="true">
-                        <div class="floating-item" data-tech="AI" style="--delay: 0s;" role="presentation">
-                            <i class="fas fa-brain" aria-label="AI Technology"></i>
-                        </div>
-                        <div class="floating-item" data-tech="Cloud" style="--delay: 1s;" role="presentation">
-                            <i class="fas fa-cloud" aria-label="Cloud Technology"></i>
-                        </div>
-                        <div class="floating-item" data-tech="DevOps" style="--delay: 2s;" role="presentation">
-                            <i class="fas fa-cogs" aria-label="DevOps Technology"></i>
-                        </div>
-                        <div class="floating-item" data-tech="Product" style="--delay: 3s;" role="presentation">
-                            <i class="fas fa-rocket" aria-label="Product Management"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section id="skills">
+  <div class="wrap">
+    <div class="eyebrow rv">Toolbox</div>
+    <h2 class="rv">What I work with</h2>
+    <div class="skills">
+      <div class="card rv"><h3>Product</h3><div class="tags"><span>Strategy</span><span>Roadmapping</span><span>Stakeholders</span><span>Digital Transformation</span></div></div>
+      <div class="card rv" style="--d:.06s"><h3>Cloud & DevOps</h3><div class="tags"><span>Kubernetes</span><span>AWS</span><span>Azure</span><span>Terraform</span><span>ArgoCD</span><span>Helm</span><span>Docker</span></div></div>
+      <div class="card rv" style="--d:.12s"><h3>AI & Data</h3><div class="tags"><span>Agentic AI</span><span>MCP</span><span>TensorFlow</span><span>PyTorch</span><span>Kubeflow</span><span>Kafka</span><span>Temporal</span></div></div>
+      <div class="card rv" style="--d:.18s"><h3>Engineering</h3><div class="tags"><span>Go</span><span>Python</span><span>Java / Spring Boot</span><span>Node.js</span><span>Bash</span></div></div>
+      <div class="card rv" style="--d:.24s"><h3>Observability</h3><div class="tags"><span>Prometheus</span><span>Grafana</span><span>ELK</span><span>DataDog</span></div></div>
+    </div>
+  </div>
+</section>
 
-        <!-- About Section -->
-            <div class="companies-section" aria-labelledby="companies-heading">
-                <div class="container">
-                    <h2 id="companies-heading" class="companies-text">Contributed to Elite set of leading organizations</h2>
-                    <div class="companies-logos" role="list" aria-label="Companies I have worked with">
-                        <a href="https://www.vertexinc.com" 
-                           target="_blank" 
-                           rel="noopener noreferrer" 
-                           class="company-link"
-                           role="listitem"
-                           aria-label="Visit Vertex Inc website">
-                            <img src="assets/images/logos/vertex_logo.png" 
-                                 alt="Vertex Inc logo" 
-                                 class="company-logo-big"
-                                 width="120" 
-                                 height="60">
-                        </a>
-                        <a href="https://www.mckinsey.com" 
-                           target="_blank" 
-                           rel="noopener noreferrer" 
-                           class="company-link"
-                           role="listitem"
-                           aria-label="Visit McKinsey & Company website">
-                            <img src="assets/images/logos/mc_logo.png" 
-                                 alt="McKinsey & Company logo" 
-                                 class="company-logo-big"
-                                 width="120" 
-                                 height="60">
-                        </a>
-                        <a href="https://www.albertinvent.com" 
-                           target="_blank" 
-                           rel="noopener noreferrer" 
-                           class="company-link"
-                           role="listitem"
-                           aria-label="Visit Albert Invent website">
-                            <img src="assets/images/logos/albert_logo.png" 
-                                 alt="Albert Invent logo" 
-                                 class="company-logo-big"
-                                 width="120" 
-                                 height="60">
-                        </a>
-                        <a href="https://lifebit.ai" target="_blank" rel="noopener noreferrer" class="company-link">
-                            <img src="assets/images/logos/lifebit_logo.png" alt="Lifebit Biotech" class="company-logo-big">
-                        </a>
-                        <a href="https://www.3ds.com" target="_blank" rel="noopener noreferrer" class="company-link">
-                            <img src="assets/images/logos/3ds_logo.png" alt="Dassault Systèmes" class="company-logo-big">
-                        </a>
-                        <a href="https://www.medidata.com" target="_blank" rel="noopener noreferrer" class="company-link">
-                            <img src="assets/images/logos/medidata_logo.png" alt="Medidata Solutions" class="company-logo-big">
-                        </a>                
-                        <a href="https://www.capgemini.com" target="_blank" rel="noopener noreferrer" class="company-link">
-                            <img src="assets/images/logos/cg_logo.png" alt="Capgemini" class="company-logo-big">
-                        </a>
-                        <a href="https://www.morganstanley.com" target="_blank" rel="noopener noreferrer" class="company-link">
-                            <img src="assets/images/logos/morgan_logo.png" alt="Morgan Stanley" class="company-logo-big">
-                        </a>                
-                    </div>
-                </div>
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <p class="section-subtitle">Building the Future of Platform Engineering & AI Strategy</p>
-            </div>
-            
-            <div class="about-hero">
-                <div class="about-intro">
-                    <div class="about-text">
-                        <h3>From Full Stack Engineering to Product Leadership</h3>
-                        <p>
-                            As a seasoned Technical Product Manager with a decade of extensive experience, I have 
-                            successfully navigated the dynamic landscapes of both multinational corporations and innovative 
-                            startups. My expertise has been honed through the development of scalable SaaS applications 
-                            across diverse sectors, including finance, insurance, life sciences, biotechnology, and the chemical industry.
-                        </p>
-                        <p>
-                            Recently, I further augmented my skill set by completing an <strong>Executive MBA in Product Management 
-                            & Digital Innovation from the prestigious Indian Institute of Management Kozhikode</strong>. This advanced 
-                            degree has equipped me with a strategic perspective and analytical acumen, enabling me to bridge the 
-                            gap between technology and business. I hold a <strong>US WIPO PCT Patent</strong> for AI-powered 
-                            regulatory automation systems.
-                        </p>
-                        <p>
-                            I am now eager to leverage my comprehensive background in software engineering and my newly acquired 
-                            business expertise to drive innovation, optimize processes, and deliver substantial value by combining 
-                            my robust technical foundation with strategic business insights.
-                        </p>
-                    </div>
-                    <div class="about-visual">
-                        <div class="profile-stats">
-                            <div class="stat-circle">
-                                <div class="stat-icon">
-                                    <i class="fas fa-brain"></i>
-                                </div>
-                                <h4>AI Strategy</h4>
-                                <p>Gen AI & MCP Servers</p>
-                            </div>
-                            <div class="stat-circle">
-                                <div class="stat-icon">
-                                    <i class="fas fa-rocket"></i>
-                                </div>
-                                <h4>Product</h4>
-                                <p>Technical Leadership</p>
-                            </div>
-                            <div class="stat-circle">
-                                <div class="stat-icon">
-                                    <i class="fas fa-cloud"></i>
-                                </div>
-                                <h4>Platform</h4>
-                                <p>Engineering Excellence</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="about-details">
-                <div class="about-grid">
-                    <div class="about-column">
-                        <h3 class="clickable-section" data-modal="what-i-do">
-                            <i class="fas fa-target"></i> What I Do
-                            <i class="fas fa-expand-alt section-expand-icon" aria-hidden="true"></i>
-                        </h3>
-                        <div class="about-items">
-                            <div class="about-item">
-                                <div class="item-icon">
-                                    <i class="fas fa-chart-line"></i>
-                                </div>
-                                <div class="item-content">
-                                    <h4>Product Strategy & Roadmapping</h4>
-                                    <p>Translate complex technical requirements into strategic product roadmaps that align with business objectives</p>
-                                </div>
-                            </div>
-                            <div class="about-item">
-                                <div class="item-icon">
-                                    <i class="fas fa-cogs"></i>
-                                </div>
-                                <div class="item-content">
-                                    <h4>Platform Engineering</h4>
-                                    <p>Design and implement scalable infrastructure solutions using Kubernetes, Terraform, and cloud-native technologies</p>
-                                </div>
-                            </div>
-                            <div class="about-item">
-                                <div class="item-icon">
-                                    <i class="fas fa-users"></i>
-                                </div>
-                                <div class="item-content">
-                                    <h4>Cross-Functional Leadership</h4>
-                                    <p>Lead engineering teams, collaborate with stakeholders, and drive technical initiatives across organizations</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="about-column">
-                        <h3 class="clickable-section" data-modal="current-focus">
-                            <i class="fas fa-lightbulb"></i> Current Focus
-                            <i class="fas fa-expand-alt section-expand-icon" aria-hidden="true"></i>
-                        </h3>
-                        <div class="focus-areas">
-                            <div class="focus-item">
-                                <span class="focus-badge">AI/ML</span>
-                                <h4>Agentic AI Systems</h4>
-                                <p>Exploring intelligent automation and Model Context Protocol (MCP) servers for next-generation platforms</p>
-                            </div>
-                            <div class="focus-item">
-                                <span class="focus-badge">DevOps</span>
-                                <h4>GitOps & Automation</h4>
-                                <p>Implementing continuous deployment pipelines with ArgoCD, Temporal, and Kubernetes operators</p>
-                            </div>
-                            <div class="focus-item">
-                                <span class="focus-badge">Cloud</span>
-                                <h4>Multi-Cloud Strategy</h4>
-                                <p>Architecting resilient, scalable solutions across AWS, GCP, and Azure ecosystems</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="achievements-section">
-                <h3 class="clickable-section" data-modal="key-achievements">
-                    <i class="fas fa-trophy"></i> Key Achievements & Impact
-                    <i class="fas fa-expand-alt section-expand-icon" aria-hidden="true"></i>
-                </h3>
-                <div class="achievements-grid">
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <div class="achievement-content">
-                            <h4>US WIPO PCT Patent Holder</h4>
-                            <p>Inventor on <strong>patent WO2024233807A1</strong> for "Method of generating regulatory outputs" - AI-powered automation for chemical safety documentation</p>
-                            <span class="achievement-tech">
-                                <a href="https://patents.google.com/patent/WO2024233807A1" target="_blank">View Patent</a> • 
-                                <a href="https://www.tensorflow.org/learn" target="_blank">AI Algorithms</a> • 
-                                <a href="https://www.albertinvent.com/platform/regulatory-intelligence" target="_blank">Regulatory intelligence</a>
-                            </span>
-                        </div>
-                    </div>
-                    
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="achievement-content">
-                            <h4>99.5% Time Reduction</h4>
-                            <p>Cut cloud provisioning time from <strong>2 days to 2 hours</strong> with automated Infrastructure as Code</p>
-                            <span class="achievement-tech">
-                                <a href="https://developer.hashicorp.com/terraform/docs" target="_blank">Terraform</a> • 
-                                <a href="https://kubernetes.io/docs/" target="_blank">Kubernetes</a> • 
-                                <a href="https://opengitops.dev/" target="_blank">GitOps</a>
-                            </span>
-                        </div>
-                    </div>
-                    
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="achievement-content">
-                            <h4>99.9%+ Reliability</h4>
-                            <p>Maintained <strong>enterprise-grade uptime</strong> through resilient architecture and monitoring</p>
-                            <span class="achievement-tech">
-                                <a href="https://prometheus.io/docs/" target="_blank">Prometheus</a> • 
-                                <a href="https://grafana.com/docs/" target="_blank">Grafana</a> • 
-                                <a href="https://sre.google/" target="_blank">SRE Practices</a>
-                            </span>
-                        </div>
-                    </div>
-                    
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-sync"></i>
-                        </div>
-                        <div class="achievement-content">
-                            <h4>Legacy Modernization</h4>
-                            <p>Led <strong>3+ platform modernization</strong> initiatives across multiple Fortune 500 organizations</p>
-                            <span class="achievement-tech">
-                                <a href="https://microservices.io/" target="_blank">Microservices</a> • 
-                                <a href="https://kafka.apache.org/documentation/streams/" target="_blank">Event Streaming</a> • 
-                                <a href="https://swagger.io/specification/" target="_blank">API Design</a>
-                            </span>
-                        </div>
-                    </div>
-                    
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-dollar-sign"></i>
-                        </div>
-                        <div class="achievement-content">
-                            <h4>$2M+ Cost Savings</h4>
-                            <p>Delivered significant <strong>operational savings</strong> through intelligent automation and optimization</p>
-                            <span class="achievement-tech">
-                                <a href="https://www.tensorflow.org/learn" target="_blank">AI Platforms</a> • 
-                                <a href="https://docs.python.org/3/library/automation.html" target="_blank">Process Automation</a> • 
-                                <a href="https://www.elastic.co/guide/" target="_blank">Analytics</a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="philosophy-section">
-                <div class="philosophy-content">
-                    <h3><i class="fas fa-quote-left"></i> My Philosophy</h3>
-                    <blockquote>
-                        "Great products are born at the intersection of technical excellence and user empathy. 
-                        As a technical product manager, my role is to translate complex engineering capabilities 
-                        into solutions that genuinely solve real-world problems while maintaining the highest 
-                        standards of reliability and performance."
-                    </blockquote>
-                    <div class="philosophy-pillars">
-                        <div class="pillar">
-                            <i class="fas fa-balance-scale"></i>
-                            <h4>Technical Excellence</h4>
-                            <p>Deep engineering expertise meets product strategy</p>
-                        </div>
-                        <div class="pillar">
-                            <i class="fas fa-heart"></i>
-                            <h4>User-Centric Design</h4>
-                            <p>Technology should enhance human potential</p>
-                        </div>
-                        <div class="pillar">
-                            <i class="fas fa-forward"></i>
-                            <h4>Innovation Leadership</h4>
-                            <p>Driving transformation through emerging technologies</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Next Section Button -->
-            <div class="section-navigation">
-                <a href="#experience" class="btn btn-primary btn-next-section">
-                    <span>Explore My Career Path</span>
-                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header">
-                <p class="section-subtitle">Building scalable platforms and leading technical innovation</p>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="job-header">
-                        <div class="job-title-company">
-                            <h3>Product Owner - Platform Transformation</h3>
-                            <div class="company-info">
-                                <a href="https://www.vertexinc.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/images/logos/vertex_logo.png" alt="Vertex Inc." class="company-logo">
-                                </a>
-                                <div class="company-details">
-                                    <span class="company-name">Vertex Inc.</span>
-                                    <span class="company-location">Remote • King of Prussia, United States</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="job-duration">
-                            <span class="duration">October 2024 - Present</span>
-                            <span class="employment-type">Full-time • 10 months</span>
-                        </div>
-                    </div>
-                    <div class="job-description">
-                        <p>Leading productivity engineering initiatives at Vertex Inc., focusing on enterprise-scale platform optimization and automation solutions for enhanced developer experience and operational efficiency.</p>
-                        <ul class="achievements">
-                            <li>Driving productivity improvements across engineering teams</li>
-                            <li>Implementing automated solutions for enhanced operational efficiency</li>
-                            <li>Leading cross-functional initiatives for platform optimization</li>
-                            <li>Focusing on developer experience and tooling improvements</li>
-                        </ul>
-                        <div class="job-skills">
-                            <span class="skill-tag">Platform Engineering</span>
-                            <span class="skill-tag">Automation</span>
-                            <span class="skill-tag">Productivity Optimization</span>
-                            <span class="skill-tag">Enterprise Systems</span>
-                            <span class="skill-tag">Developer Experience</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="job-header">
-                        <div class="job-title-company">
-                            <h3>Forward Program Scholar</h3>
-                            <div class="company-info">
-                                <a href="https://www.mckinsey.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/images/logos/mc_logo.png" alt="McKinsey & Company" class="company-logo">
-                                </a>
-                                <div class="company-details">
-                                    <span class="company-name">McKinsey & Company</span>
-                                    <span class="company-location">Remote • United States</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="job-duration">
-                            <span class="duration">February 2025 - May 2025</span>
-                            <span class="employment-type">Internship • 3 months</span>
-                        </div>
-                    </div>
-                    <div class="job-description">
-                        <p>Served as a Business Analytics Consultant Intern in the prestigious Forward Program at McKinsey & Company. Collaborated with global teams to solve real-world business challenges using data-driven insights and advanced analytics methodologies.</p>
-                        <ul class="achievements">
-                            <li>Analyzed complex business problems and delivered actionable recommendations for process optimization</li>
-                            <li>Developed interactive dashboards and reports to visualize key performance metrics for stakeholders</li>
-                            <li>Applied statistical modeling and data analysis to support strategic decision-making</li>
-                            <li>Worked cross-functionally with consultants and clients to implement analytics solutions</li>
-                        </ul>
-                        <div class="job-skills">
-                            <span class="skill-tag">Business Analytics</span>
-                            <span class="skill-tag">Data Visualization</span>
-                            <span class="skill-tag">Statistical Modeling</span>
-                            <span class="skill-tag">Consulting</span>
-                            <span class="skill-tag">Process Optimization</span>
-                        </div>
-                    </div>
-                </div>                
-
-                <div class="timeline-item">
-                    <div class="job-header">
-                        <div class="job-title-company">
-                            <h3>Platform & Site Reliability Engineer</h3>
-                            <div class="company-info">
-                                <a href="https://www.albertinvent.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/images/logos/albert_logo.png" alt="Albert Invent" class="company-logo">
-                                </a>
-                                <div class="company-details">
-                                    <span class="company-name">Albert Invent</span>
-                                    <span class="company-location">Remote • California, United States</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="job-duration">
-                            <span class="duration">August 2022 - September 2024</span>
-                            <span class="employment-type">Full-time • 2 years 2 months</span>
-                        </div>
-                    </div>
-                    <div class="job-description">
-                        <p>Developed custom Kubernetes controllers and operators in Go/Python for automated environment provisioning and ML workload orchestration. Led the deployment of microservices architecture with Knative autoscaling and Istio service mesh networking.</p>
-                        <ul class="achievements">
-                            <li>Built AI-powered regulatory automation platform (Patent WO2024233807A1)</li>
-                            <li>Implemented edge computing integrations using Azure IoT Edge pipelines</li>
-                            <li>Achieved 99.5% reduction in manual provisioning time through custom automation</li>
-                            <li>Designed and deployed ML model serving infrastructure with 99.9% availability</li>
-                        </ul>
-                        <div class="job-skills">
-                            <span class="skill-tag">Go</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Kubernetes Operators</span>
-                            <span class="skill-tag">Knative</span>
-                            <span class="skill-tag">Istio</span>
-                            <span class="skill-tag">Azure IoT Edge</span>
-                            <span class="skill-tag">ML Platform Engineering</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="job-header">
-                        <div class="job-title-company">
-                            <h3>Senior Software Engineer - Lead</h3>
-                            <div class="company-info">
-                                <a href="https://lifebit.ai" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/images/logos/lifebit_logo.png" alt="Lifebit Biotech" class="company-logo">
-                                </a>
-                                <div class="company-details">
-                                    <span class="company-name">Lifebit Biotech</span>
-                                    <span class="company-location">Remote • London, UK</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="job-duration">
-                            <span class="duration">December 2021 - August 2022</span>
-                            <span class="employment-type">Full-time • 9 months</span>
-                        </div>
-                    </div>
-                    <div class="job-description">
-                        <p>Led platform modernization initiative, refactoring monolithic legacy services into scalable microservices architecture. Managed infrastructure-as-code using Terraform on Microsoft Azure, creating real-time analytics pipelines for genomic data processing.</p>
-                        <ul class="achievements">
-                            <li>Modernized legacy monolith into 15+ microservices, improving scalability by 300%</li>
-                            <li>Implemented real-time genomic data processing pipelines using Apache Kafka</li>
-                            <li>Reduced infrastructure costs by 35% through optimized Azure resource management</li>
-                            <li>Led technical mentoring for junior engineers and established code review processes</li>
-                        </ul>
-                        <div class="job-skills">
-                            <span class="skill-tag">Microservices Architecture</span>
-                            <span class="skill-tag">Terraform</span>
-                            <span class="skill-tag">Microsoft Azure</span>
-                            <span class="skill-tag">Apache Kafka</span>
-                            <span class="skill-tag">Genomics Data</span>
-                            <span class="skill-tag">Technical Leadership</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="job-header">
-                        <div class="job-title-company">
-                            <h3>Research & Development Engineer</h3>
-                            <div class="company-info">
-                                <a href="https://www.3ds.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/images/logos/3ds_logo.png" alt="Dassault Systèmes" class="company-logo">
-                                </a>
-                                <div class="company-details">
-                                    <span class="company-name">Dassault Systèmes</span>
-                                    <span class="company-location">Pune, India</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="job-duration">
-                            <span class="duration">June 2020 - December 2021</span>
-                            <span class="employment-type">Full-time • 1 year 7 months</span>
-                        </div>
-                    </div>
-                    <div class="job-description">
-                        <p>Built comprehensive CI/CD pipelines using Jenkins for internal platform deployments. Implemented system automation using Puppet configuration management and designed monitoring dashboards with Grafana for enterprise-scale observability.</p>
-                        <ul class="achievements">
-                            <li>Automated deployment processes reducing manual effort by 80%</li>
-                            <li>Designed comprehensive monitoring solutions with Grafana and Prometheus</li>
-                            <li>Implemented edge-data ingestion pipelines for real-time analytics</li>
-                            <li>Established infrastructure as code practices using Puppet and Bash scripting</li>
-                        </ul>
-                        <div class="job-skills">
-                            <span class="skill-tag">Jenkins</span>
-                            <span class="skill-tag">Puppet</span>
-                            <span class="skill-tag">Grafana</span>
-                            <span class="skill-tag">Bash Scripting</span>
-                            <span class="skill-tag">CI/CD</span>
-                            <span class="skill-tag">DevOps</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="job-header">
-                        <div class="job-title-company">
-                            <h3>Associate Consultant - Software Engineer</h3>
-                            <div class="company-info">
-                                <a href="https://www.capgemini.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/images/logos/cg_logo.png" alt="Capgemini" class="company-logo">
-                                </a>
-                                <div class="company-details">
-                                    <span class="company-name">Capgemini</span>
-                                    <span class="company-location">Mumbai, India</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="job-duration">
-                            <span class="duration">May 2017 - June 2020</span>
-                            <span class="employment-type">Full-time • 3 years 2 months</span>
-                        </div>
-                    </div>
-                    <div class="job-description">
-                        <p>Developed enterprise-scale data ingestion systems using event-driven architecture with Apache Kafka. Collaborated with data governance teams to ensure compliance with GDPR and financial industry regulations, delivering reusable data synchronization tools.</p>
-                        <ul class="achievements">
-                            <li>Built scalable data ingestion systems processing 1M+ events daily</li>
-                            <li>Ensured GDPR compliance for financial data processing systems</li>
-                            <li>Delivered reusable data sync tools reducing development time by 50%</li>
-                            <li>Collaborated with cross-functional teams across multiple Fortune 500 clients</li>
-                        </ul>
-                        <div class="job-skills">
-                            <span class="skill-tag">Apache Kafka</span>
-                            <span class="skill-tag">Event-Driven Architecture</span>
-                            <span class="skill-tag">Data Governance</span>
-                            <span class="skill-tag">GDPR Compliance</span>
-                            <span class="skill-tag">Financial Systems</span>
-                            <span class="skill-tag">Enterprise Integration</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Next Section Button -->
-            <div class="section-navigation">
-                <a href="#skills" class="btn btn-primary btn-next-section">
-                    <span>View My Technical Expertise</span>
-                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <p class="section-subtitle">Technical expertise meets product strategy</p>
-            </div>
-            <div class="skills-grid-new">
-                <div class="skill-card">
-                    <h3><i class="fas fa-cloud"></i> Cloud & Infrastructure</h3>
-                    <div class="skill-tags">
-                        <a href="https://kubernetes.io/docs/" target="_blank" class="tag">Kubernetes</a>
-                        <a href="https://docs.aws.amazon.com/" target="_blank" class="tag">AWS</a>
-                        <!-- <a href="https://cloud.google.com/docs" target="_blank" class="tag">GCP</a> -->
-                        <a href="https://github.com/features/actions" target="_blank" class="tag">Github Actions</a>
-                        <a href="https://docs.microsoft.com/en-us/azure/" target="_blank" class="tag">Azure</a>
-                        <a href="https://developer.hashicorp.com/terraform/docs" target="_blank" class="tag">Terraform</a>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <h3><i class="fas fa-cogs"></i> DevOps & Automation</h3>
-                    <div class="skill-tags">
-                        <a href="https://argo-cd.readthedocs.io/" target="_blank" class="tag">ArgoCD</a>
-                        <a href="https://www.jenkins.io/doc/" target="_blank" class="tag">Jenkins</a>
-                        <a href="https://docs.docker.com/" target="_blank" class="tag">Docker</a>
-                        <a href="https://helm.sh/docs/" target="_blank" class="tag">Helm</a>
-                        <a href="https://opengitops.dev/" target="_blank" class="tag">GitOps</a>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <h3><i class="fas fa-stream"></i> Data & Streaming</h3>
-                    <div class="skill-tags">
-                        <a href="https://kafka.apache.org/documentation/" target="_blank" class="tag">Kafka</a>
-                        <a href="https://pulsar.apache.org/docs/" target="_blank" class="tag">Pulsar</a>
-                        <a href="https://docs.temporal.io/" target="_blank" class="tag">Temporal</a>
-                        <a href="https://debezium.io/documentation/reference/2.0/" target="_blank" class="tag">CDC & Debezium</a>
-                        <a href="https://kafka.apache.org/documentation/streams/" target="_blank" class="tag">Event Streaming</a>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <h3><i class="fas fa-robot"></i> AI & ML Ops</h3>
-                    <div class="skill-tags">
-                        <a href="https://www.tensorflow.org/learn" target="_blank" class="tag">TensorFlow</a>
-                        <a href="https://pytorch.org/docs/" target="_blank" class="tag">PyTorch</a>
-                        <a href="https://www.kubeflow.org/docs/" target="_blank" class="tag">Kubeflow</a>
-                        <a href="https://ml-ops.org/" target="_blank" class="tag">ML Platforms</a>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <h3><i class="fas fa-code"></i> Programming & Frameworks</h3>
-                    <div class="skill-tags">
-                        <a href="https://docs.spring.io/spring-framework/docs/current/reference/html/" target="_blank" class="tag">Spring Framework</a>
-                        <a href="https://spring.io/projects/spring-boot" target="_blank" class="tag">Spring Boot</a>
-                        <a href="https://go.dev/doc/" target="_blank" class="tag">Go</a>
-                        <a href="https://docs.python.org/" target="_blank" class="tag">Python</a>
-                        <a href="https://nodejs.org/en/docs/" target="_blank" class="tag">Node.js</a>
-                        <a href="https://www.gnu.org/software/bash/manual/" target="_blank" class="tag">Bash</a>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <h3><i class="fas fa-briefcase"></i> Product Management</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Software Product Management</span>
-                        <span class="tag">Digital Transformation</span>
-                        <span class="tag">Product Strategy</span>
-                        <span class="tag">Roadmapping</span>
-                        <span class="tag">Stakeholder Management</span>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <h3><i class="fas fa-chart-line"></i> Monitoring</h3>
-                    <div class="skill-tags">
-                        <a href="https://prometheus.io/docs/" target="_blank" class="tag">Prometheus</a>
-                        <a href="https://grafana.com/docs/" target="_blank" class="tag">Grafana</a>
-                        <a href="https://www.elastic.co/guide/" target="_blank" class="tag">ELK Stack</a>
-                        <a href="https://docs.datadoghq.com/" target="_blank" class="tag">DataDog</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Next Section Button -->
-            <div class="section-navigation">
-                <a href="#education" class="btn btn-primary btn-next-section">
-                    <span>See My Credentials</span>
-                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education & Certifications Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <div class="section-header">
-                <p class="section-subtitle">Continuous learning and professional development</p>
-            </div>
-            
-            <div class="education-grid">
-                <!-- Education -->
-                <div class="education-card">
-                    <div class="education-header">
-                        <div class="education-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h3>Education</h3>
-                    </div>
-                    <div class="education-content">
-                        <div class="education-item">
-                            <h4>Executive MBA - EMBA</h4>
-                            <div class="institution">Indian Institute of Management, Kozhikode</div>
-                            <div class="duration">April 2022 - May 2024</div>
-                            <p>Product Management & Digital Transformation - Strategic perspective and analytical acumen for bridging technology and business.</p>
-                        </div>
-                        <div class="education-item">
-                            <h4>Bachelor's Degree</h4>
-                            <div class="institution">Malaviya National Institute of Technology Jaipur</div>
-                            <div class="duration">June 2013 - May 2017</div>
-                            <p>Computer Science - Foundation in computer science, software engineering, and system design principles.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Professional Certifications -->
-                <div class="education-card">
-                    <div class="education-header">
-                        <div class="education-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <h3>Professional Certifications</h3>
-                    </div>
-                    <div class="education-content">
-                        <div class="cert-grid">
-                            <div class="cert-item">
-                                <div class="cert-logo">
-                                    <i class="fas fa-chart-bar"></i>
-                                </div>
-                                <div class="cert-details">
-                                    <h5>SAS Certified Data Scientist Using SAS 9</h5>
-                                    <span class="cert-issuer">SAS Institute</span>
-                                </div>
-                            </div>
-                            <div class="cert-item">
-                                <div class="cert-logo">
-                                    <i class="fas fa-chart-line"></i>
-                                </div>
-                                <div class="cert-details">
-                                    <h5>NSE Financial Markets</h5>
-                                    <span class="cert-issuer">National Stock Exchange</span>
-                                </div>
-                            </div>
-                            <div class="cert-item">
-                                <div class="cert-logo">
-                                    <i class="fas fa-database"></i>
-                                </div>
-                                <div class="cert-details">
-                                    <h5>SAS Certified Big Data Professional Using SAS 9</h5>
-                                    <span class="cert-issuer">SAS Institute</span>
-                                </div>
-                            </div>
-                            <div class="cert-item">
-                                <div class="cert-logo">
-                                    <i class="fas fa-analytics"></i>
-                                </div>
-                                <div class="cert-details">
-                                    <h5>Certified Analytics Professional (CAP)</h5>
-                                    <span class="cert-issuer">INFORMS</span>
-                                </div>
-                            </div>
-                            <div class="cert-item">
-                                <div class="cert-logo">
-                                    <i class="fab fa-google"></i>
-                                </div>
-                                <div class="cert-details">
-                                    <h5>Google Analytics</h5>
-                                    <span class="cert-issuer">Google</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Professional Courses -->
-                <div class="education-card">
-                    <div class="education-header">
-                        <div class="education-icon">
-                            <i class="fas fa-book-open"></i>
-                        </div>
-                        <h3>Professional Development</h3>
-                    </div>
-                    <div class="education-content">
-                        <div class="course-list">
-                            <div class="course-item">
-                                <h5>Executive MBA in Product Management & Digital Innovation</h5>
-                                <span class="course-provider">Indian Institute of Management Kozhikode</span>
-                            </div>
-                            <div class="course-item">
-                                <h5>McKinsey Forward Program Scholar</h5>
-                                <span class="course-provider">McKinsey & Company</span>
-                            </div>
-                            <div class="course-item">
-                                <h5>Youth Mentoring Program</h5>
-                                <span class="course-provider">Relevel by Unacademy</span>
-                            </div>
-                            <div class="course-item">
-                                <h5>Software Product Management</h5>
-                                <span class="course-provider">Advanced Professional Development</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Awards & Recognition -->
-                <div class="education-card">
-                    <div class="education-header">
-                        <div class="education-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <h3>Awards & Recognition</h3>
-                    </div>
-                    <div class="education-content">
-                        <div class="course-list">
-                            <div class="course-item">
-                                <h5>Rising Star Award</h5>
-                                <span class="course-provider">Professional Recognition</span>
-                            </div>
-                            <div class="course-item">
-                                <h5>Customer Delight Award</h5>
-                                <span class="course-provider">Excellence in Customer Service</span>
-                            </div>
-                            <div class="course-item">
-                                <h5>Innovation Award</h5>
-                                <span class="course-provider">Technical Innovation Excellence</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Patents & Innovation -->
-                <div class="education-card">
-                    <div class="education-header">
-                        <div class="education-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <h3>Patents & Innovation</h3>
-                    </div>
-                    <div class="education-content">
-                        <div class="patent-item">
-                            <div class="patent-header">
-                                <h5>US WIPO PCT Patent - AI Regulatory Automation</h5>
-                                <span class="patent-number">WO2024233807A1</span>
-                            </div>
-                            <p class="patent-description">
-                                "Method of generating regulatory outputs" - Innovative approach to automated 
-                                regulatory documentation using agentic AI systems, reducing manual processes 
-                                by 40% in enterprise environments.
-                            </p>
-                            <div class="patent-links">
-                                <a href="https://patents.google.com/patent/WO2024233807A1" target="_blank" class="patent-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    View Patent Details
-                                </a>
-                            </div>
-                            <div class="patent-tags">
-                                <span class="patent-tag">AI/ML</span>
-                                <span class="patent-tag">Automation</span>
-                                <span class="patent-tag">Regulatory Technology</span>
-                                <span class="patent-tag">Enterprise Systems</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- LinkedIn Integration Notice -->
-            <div class="linkedin-integration">
-                <div class="linkedin-card">
-                    <div class="linkedin-header">
-                        <i class="fab fa-linkedin"></i>
-                        <h4>Complete Professional Profile</h4>
-                    </div>
-                    <p>For the most up-to-date information about my professional journey, certifications, and detailed work history, visit my LinkedIn profile.</p>
-                    <a href="https://www.linkedin.com/in/mukund-j-b01847b1/" target="_blank" class="linkedin-cta">
-                        <span>View Full LinkedIn Profile</span>
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Next Section Button -->
-            <div class="section-navigation">
-                <a href="#projects" class="btn btn-primary btn-next-section">
-                    <span>Explore My Portfolio</span>
-                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <p class="section-subtitle">Transforming technical challenges into strategic solutions</p>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card featured">
-                    <div class="project-media">
-                        <div class="project-video">
-                            <img 
-                                src="assets/images/logos/albert-thumb.png" 
-                                alt="AI Platform Demo"
-                                class="project-image-featured">
-                            <div class="video-overlay" style="display: none;">
-                                <div class="play-button">
-                                    <i class="fas fa-play"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <div class="project-icon">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                            <div class="project-meta">
-                                <h3>AI-Powered Regulatory Automation Platform</h3>
-                                <span class="project-type">Product Leadership • Patent Invention</span>
-                            </div>
-                        </div>
-                        <p>Led the development of an intelligent automation platform using agentic AI for regulatory documentation, resulting in 40% reduction in manual processes. <strong>Inventor on US WIPO PCT Patent WO2024233807A1</strong> for "Method of generating regulatory outputs."</p>
-                        <div class="project-metrics">
-                            <div class="metric">
-                                <span class="metric-value">40%</span>
-                                <span class="metric-label">Process Automation</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">1</span>
-                                <span class="metric-label">US Patent Filed</span>
-                            </div>
-                        </div>
-                        <div class="project-tech">
-                            <a href="https://docs.python.org/" target="_blank" class="tech-tag">Python</a>
-                            <a href="https://www.tensorflow.org/learn" target="_blank" class="tech-tag">TensorFlow</a>
-                            <a href="https://kubernetes.io/docs/" target="_blank" class="tech-tag">Kubernetes</a>
-                            <a href="https://spec.modelcontextprotocol.io/" target="_blank" class="tech-tag">MCP</a>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://patents.google.com/patent/WO2024233807A1" target="_blank" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                View Patent
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projects-regular-grid">
-                    <div class="project-card">
-                        <div class="project-media">
-                            <div class="project-image">
-                                <div class="project-placeholder">
-                                    <i class="fas fa-cloud"></i>
-                                    <h4>Cloud Migration</h4>
-                                    <p>Enterprise Architecture</p>
-                                </div>
-                            </div>
-                            <div class="project-overlay">
-                                <div class="overlay-content">
-                                    <h4>Enterprise Migration</h4>
-                                    <p>99.9% Uptime Achievement</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <div class="project-icon">
-                                    <i class="fas fa-cloud"></i>
-                                </div>
-                                <div class="project-meta">
-                                    <h3>Multi-Cloud Enterprise Migration</h3>
-                                    <span class="project-type">Technical Architecture</span>
-                                </div>
-                            </div>
-                            <p>Architected and executed seamless migration of enterprise applications from on-premises to multi-cloud architecture, achieving 99.9% uptime and 30% cost reduction.</p>
-                            <div class="project-tech">
-                                <a href="https://docs.aws.amazon.com/" target="_blank" class="tech-tag">AWS</a>
-                                <a href="https://docs.microsoft.com/en-us/azure/" target="_blank" class="tech-tag">Azure</a>
-                                <a href="https://developer.hashicorp.com/terraform/docs" target="_blank" class="tech-tag">Terraform</a>
-                                <a href="https://kubernetes.io/docs/" target="_blank" class="tech-tag">Kubernetes</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-media">
-                            <div class="project-image">
-                                <div class="project-placeholder">
-                                    <i class="fas fa-layer-group"></i>
-                                    <h4>SaaS Platform</h4>
-                                    <p>Multi-Tenant Architecture</p>
-                                </div>
-                            </div>
-                            <div class="project-overlay">
-                                <div class="overlay-content">
-                                    <h4>Platform Architecture</h4>
-                                    <p>Multi-Tenant SaaS</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <div class="project-icon">
-                                    <i class="fas fa-layer-group"></i>
-                                </div>
-                                <div class="project-meta">
-                                    <h3>Multi-Tenant SaaS Platform</h3>
-                                    <span class="project-type">Product Strategy</span>
-                                </div>
-                            </div>
-                            <p>Designed and built a scalable multi-tenant SaaS platform from scratch, supporting 1000+ enterprise customers with high availability and performance.</p>
-                            <div class="project-tech">
-                                <a href="https://nodejs.org/en/docs/" target="_blank" class="tech-tag">Node.js</a>
-                                <a href="https://react.dev/learn" target="_blank" class="tech-tag">React</a>
-                                <a href="https://www.postgresql.org/docs/" target="_blank" class="tech-tag">PostgreSQL</a>
-                                <a href="https://redis.io/docs/" target="_blank" class="tech-tag">Redis</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-media">
-                            <div class="project-image">
-                                <div class="project-placeholder">
-                                    <i class="fas fa-sync"></i>
-                                    <h4>Legacy Modernization</h4>
-                                    <p>Microservices Transformation</p>
-                                </div>
-                            </div>
-                            <div class="project-overlay">
-                                <div class="overlay-content">
-                                    <h4>System Modernization</h4>
-                                    <p>Microservices Architecture</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <div class="project-icon">
-                                    <i class="fas fa-sync"></i>
-                                </div>
-                                <div class="project-meta">
-                                    <h3>Legacy System Modernization</h3>
-                                    <span class="project-type">Technical Leadership</span>
-                                </div>
-                            </div>
-                            <p>Transformed a 15-year-old monolithic system to microservices architecture, improving performance by 60% and reducing deployment time by 80%.</p>
-                            <div class="project-tech">
-                                <a href="https://docs.docker.com/" target="_blank" class="tech-tag">Docker</a>
-                                <a href="https://microservices.io/" target="_blank" class="tech-tag">Microservices</a>
-                                <a href="https://swagger.io/specification/" target="_blank" class="tech-tag">API Gateway</a>
-                                <a href="https://kafka.apache.org/documentation/streams/" target="_blank" class="tech-tag">Event Streaming</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-media">
-                            <div class="project-image">
-                                <div class="project-placeholder">
-                                    <i class="fas fa-cogs"></i>
-                                    <h4>DevOps Platform</h4>
-                                    <p>Kubernetes & IaC</p>
-                                </div>
-                            </div>
-                            <div class="project-overlay">
-                                <div class="overlay-content">
-                                    <h4>Platform Engineering</h4>
-                                    <p>Kubernetes Operators & IaC</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <div class="project-icon">
-                                    <i class="fas fa-cogs"></i>
-                                </div>
-                                <div class="project-meta">
-                                    <h3>DevOps Platform Engineering</h3>
-                                    <span class="project-type">Infrastructure Innovation</span>
-                                </div>
-                            </div>
-                            <p>Built custom Kubernetes operators and controllers to automate environment provisioning, reducing setup time from 2 days to 2 hours while maintaining 99.9% system reliability.</p>
-                            <div class="project-tech">
-                                <a href="https://go.dev/doc/" target="_blank" class="tech-tag">Go</a>
-                                <a href="https://kubernetes.io/docs/" target="_blank" class="tech-tag">Kubernetes</a>
-                                <a href="https://developer.hashicorp.com/terraform/docs" target="_blank" class="tech-tag">Terraform</a>
-                                <a href="https://argo-cd.readthedocs.io/" target="_blank" class="tech-tag">ArgoCD</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Next Section Button -->
-            <div class="section-navigation">
-                <a href="#github-activity" class="btn btn-primary btn-next-section">
-                    <span>View My Code Contributions</span>
-                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- GitHub Contributions Section -->
-    <section id="github-activity" class="github-activity">
-        <div class="container">
-            <div class="section-header">
-                <p class="section-subtitle">Continuous learning and open-source contributions</p>
-            </div>
-            
-            <div class="github-content">
-                <!-- GitHub Profile Summary -->
-                <div class="github-profile-summary">
-                    <div class="github-profile-header">
-                        <a href="https://github.com/mjangid7" target="_blank" class="github-avatar-link">
-                            <img src="https://github.com/mjangid7.png" alt="Mukund Jangid GitHub Avatar" class="github-avatar">
-                        </a>
-                        <div class="github-profile-info">
-                            <h3>
-                                <a href="https://github.com/mjangid7" target="_blank">@mjangid7</a>
-                            </h3>
-                            <p class="github-bio">Building innovative solutions with AI, Cloud, and Platform Engineering</p>
-                            <div class="github-quick-stats">
-                                <div class="quick-stat">
-                                    <i class="fas fa-code-branch"></i>
-                                    <strong>239</strong>
-                                    <span>Pull Requests</span>
-                                </div>
-                                <div class="quick-stat">
-                                    <i class="fas fa-star"></i>
-                                    <strong>32</strong>
-                                    <span>Stars</span>
-                                </div>
-                                <div class="quick-stat">
-                                    <i class="fas fa-exclamation-circle"></i>
-                                    <strong>540</strong>
-                                    <span>Issues</span>
-                                </div>
-                                <div class="quick-stat">
-                                    <i class="fas fa-users"></i>
-                                    <strong>21</strong>
-                                    <span>Repos Contributed</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- GitHub Stats Cards -->
-                <div class="github-stats-grid">
-                    <div class="github-stat-card custom-stats-card">
-                        <div class="custom-stats-header">
-                            <h4>Mukund Jangid's GitHub Stats (2025)</h4>
-                            <div class="stats-grade">
-                                <span class="grade-circle">A++</span>
-                            </div>
-                        </div>
-                        <div class="custom-stats-grid">
-                            <div class="stat-row">
-                                <i class="fas fa-star stat-icon"></i>
-                                <span class="stat-label">Total Stars:</span>
-                                <span class="stat-value">32</span>
-                            </div>
-                            <div class="stat-row">
-                                <i class="fas fa-code-commit stat-icon"></i>
-                                <span class="stat-label">Total Commits:</span>
-                                <span class="stat-value">2k</span>
-                            </div>
-                            <div class="stat-row">
-                                <i class="fas fa-code-branch stat-icon"></i>
-                                <span class="stat-label">Total PRs:</span>
-                                <span class="stat-value">239</span>
-                            </div>
-                            <div class="stat-row">
-                                <i class="fas fa-exclamation-circle stat-icon"></i>
-                                <span class="stat-label">Total Issues:</span>
-                                <span class="stat-value">540</span>
-                            </div>
-                            <div class="stat-row">
-                                <i class="fas fa-users stat-icon"></i>
-                                <span class="stat-label">Contributed to:</span>
-                                <span class="stat-value">21</span>
-                            </div>
-                        </div>
-                        <div class="stats-footer">
-                            <a href="https://github.com/mjangid7" target="_blank" class="visit-profile-link">
-                                Visit my <span>GitHub profile</span> for live stats
-                            </a>
-                        </div>
-                    </div>
-                    <div class="github-stat-card">
-                        <img src="https://streak-stats.demolab.com?user=mjangid7&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=58a6ff&ring=1f6feb&fire=58a6ff&currStreakLabel=c9d1d9&date_format=M%20j%5B%2C%20Y%5D" 
-                             alt="GitHub Streak Stats"
-                             loading="lazy">
-                    </div>
-                </div>
-
-                <!-- GitHub Contribution Graph -->
-                <div class="github-contribution-card">
-                    <div class="contribution-header">
-                        <h3>Contribution Activity</h3>
-                        <a href="https://github.com/mjangid7" 
-                           target="_blank" 
-                           class="github-profile-link"
-                           aria-label="Visit GitHub profile">
-                            <i class="fab fa-github"></i>
-                            View Full Profile
-                        </a>
-                    </div>
-                    <div class="contribution-graph">
-                        <img src="https://ghchart.rshah.org/58a6ff/mjangid7" 
-                             alt="Mukund's GitHub Contribution Graph"
-                             loading="lazy">
-                    </div>
-                </div>
-
-                <!-- Activity and Languages Side by Side -->
-                <div class="github-split-layout">
-                    <!-- GitHub Activity Graph -->
-                    <div class="github-activity-graph">
-                        <h3>Recent Activity Graph</h3>
-                        <div class="activity-graph-container">
-                            <img src="https://github-readme-activity-graph.vercel.app/graph?username=mjangid7&theme=github-dark-dimmed&hide_border=true&bg_color=0d1117&color=58a6ff&line=1f6feb&point=58a6ff&area=true&custom_title=Contribution%20Activity%20Graph" 
-                                 alt="GitHub Activity Graph"
-                                 loading="lazy">
-                        </div>
-                    </div>
-
-                    <!-- Most Used Languages (Moved Here) -->
-                    <div class="github-languages-card">
-                        <h3>Most Used Languages</h3>
-                        <div class="language-bars">
-                            <div class="language-bar-item">
-                                <div class="lang-header">
-                                    <div class="lang-name">
-                                        <span class="lang-dot" style="background: #f89820;"></span>
-                                        <span>Java</span>
-                                    </div>
-                                    <span class="lang-percent">28%</span>
-                                </div>
-                                <div class="lang-bar-bg">
-                                    <div class="lang-bar-fill" style="width: 28%; background: #f89820;"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="language-bar-item">
-                                <div class="lang-header">
-                                    <div class="lang-name">
-                                        <span class="lang-dot" style="background: #00ADD8;"></span>
-                                        <span>Go</span>
-                                    </div>
-                                    <span class="lang-percent">25%</span>
-                                </div>
-                                <div class="lang-bar-bg">
-                                    <div class="lang-bar-fill" style="width: 25%; background: #00ADD8;"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="language-bar-item">
-                                <div class="lang-header">
-                                    <div class="lang-name">
-                                        <span class="lang-dot" style="background: #3776ab;"></span>
-                                        <span>Python</span>
-                                    </div>
-                                    <span class="lang-percent">22%</span>
-                                </div>
-                                <div class="lang-bar-bg">
-                                    <div class="lang-bar-fill" style="width: 22%; background: #3776ab;"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="language-bar-item">
-                                <div class="lang-header">
-                                    <div class="lang-name">
-                                        <span class="lang-dot" style="background: #f7df1e;"></span>
-                                        <span>JavaScript</span>
-                                    </div>
-                                    <span class="lang-percent">15%</span>
-                                </div>
-                                <div class="lang-bar-bg">
-                                    <div class="lang-bar-fill" style="width: 15%; background: #f7df1e;"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="language-bar-item">
-                                <div class="lang-header">
-                                    <div class="lang-name">
-                                        <span class="lang-dot" style="background: #512BD4;"></span>
-                                        <span>.NET</span>
-                                    </div>
-                                    <span class="lang-percent">10%</span>
-                                </div>
-                                <div class="lang-bar-bg">
-                                    <div class="lang-bar-fill" style="width: 10%; background: #512BD4;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Next Section Button -->
-            <div class="section-navigation">
-                <a href="#contact" class="btn btn-primary btn-next-section">
-                    <span>Let's Connect</span>
-                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <p class="section-subtitle">Ready to build something amazing together? Let's start the conversation.</p>
-            </div>
-            
-            <div class="contact-wrapper">
-                <div class="contact-hero">
-                    <div class="contact-hero-content">
-                        <h3>Building the Future of Technology & Product Innovation</h3>
-                        <p>Whether you're looking to modernize your infrastructure, build AI-powered platforms, need strategic product leadership, or exploring management consulting opportunities, I'm here to help transform your vision into reality.</p>
-                        <div class="contact-highlights">
-                            <div class="highlight-item">
-                                <i class="fas fa-rocket"></i>
-                                <span>Product Management & Strategy</span>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-brain"></i>
-                                <span>AI Platform Architecture</span>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-cloud"></i>
-                                <span>Full Stack Engineering</span>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-graduation-cap"></i>
-                                <span>MBA in Product Management</span>
-                            </div>
-                        </div>
-                        <div class="contact-info">
-                            <div class="info-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Remote • India</span>
-                            </div>
-                            <div class="info-item">
-                                <i class="fas fa-phone"></i>
-                                <span>+91 7726806243</span>
-                            </div>
-                            <div class="info-item">
-                                <i class="fas fa-language"></i>
-                                <span>English (Full Professional), German (Limited Working)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-methods">
-                    <div class="contact-grid">
-                        <a href="mailto:mukund.jangid95@gmail.com" class="contact-card email-card">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Email Me</h4>
-                                <p>mukund.jangid95@gmail.com</p>
-                                <span class="contact-action">Send a message <i class="fas fa-arrow-right"></i></span>
-                            </div>
-                        </a>
-                        
-                        <a href="https://www.linkedin.com/in/mukund-j-b01847b1/" target="_blank" class="contact-card linkedin-card">
-                            <div class="contact-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>LinkedIn</h4>
-                                <p>Professional Network</p>
-                                <span class="contact-action">Connect with me <i class="fas fa-external-link-alt"></i></span>
-                            </div>
-                        </a>
-                        
-                        <a href="https://mjangid7.github.io/" target="_blank" class="contact-card github-card">
-                            <div class="contact-icon">
-                                <i class="fas fa-globe"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Portfolio</h4>
-                                <p>Live Website</p>
-                                <span class="contact-action">View portfolio <i class="fas fa-external-link-alt"></i></span>
-                            </div>
-                        </a>
-                        
-                        <a href="tel:+917726806243" class="contact-card phone-card">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Call Me</h4>
-                                <p>+91 7726806243</p>
-                                <span class="contact-action">Schedule a call <i class="fas fa-phone"></i></span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="contact-cta">
-                    <div class="cta-content">
-                        <h3>Ready to Start?</h3>
-                        <p>Let's discuss how we can bring your next breakthrough to life.</p>
-                        <div class="cta-buttons">
-                            <button type="button" class="btn btn-primary cta-btn" onclick="openContactModal()">
-                                <i class="fas fa-envelope"></i>
-                                <span>Start a Conversation</span>
-                            </button>
-                            <a href="#projects" class="btn btn-secondary cta-btn">
-                                <i class="fas fa-eye"></i>
-                                <span>View My Work</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                <p>&copy; 2025 Mukund Jangid. All rights reserved.</p>
-                    <p class="patent-notice">Inventor • <a href="https://patents.google.com/patent/WO2024233807A1" target="_blank">US WIPO PCT Patent WO2024233807A1</a></p>
-                </div>
-                <div class="footer-right">
-                    <div class="footer-cta">
-                        <a href="https://cal.com/mukund-jangid/30min" 
-                           target="_blank" 
-                           class="btn btn-primary"
-                           aria-label="Schedule a 30-minute meeting">
-                            <i class="fas fa-calendar-alt"></i>
-                            <span>Schedule a Meeting</span>
-                        </a>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/mukund-j-b01847b1/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/mjangid7" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="https://patents.google.com/patent/WO2024233807A1" target="_blank" class="social-link" title="View Patent"><i class="fas fa-certificate"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Contact Modal -->
-    <div id="contactModal" class="modal-overlay">
-        <div class="modal-container">
-            <div class="modal-header">
-                <h3>Start a Conversation</h3>
-                <button class="modal-close" aria-label="Close modal">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="modal-content">
-                <p>Let's discuss your project and how I can help bring your vision to life.</p>
-                <form id="contactForm" 
-                      class="contact-form" 
-                      role="form" 
-                      aria-labelledby="contact-form-title"
-                      novalidate>
-                    <h3 id="contact-form-title" class="sr-only">Contact Form</h3>
-                    <div class="form-group">
-                        <label for="name">Full Name *</label>
-                        <input type="text" 
-                               id="name" 
-                               name="name" 
-                               required 
-                               aria-required="true"
-                               aria-describedby="name-error"
-                               placeholder="Your full name">
-                        <span id="name-error" class="error-message sr-only" role="alert"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" 
-                               id="email" 
-                               name="email" 
-                               required 
-                               aria-required="true"
-                               aria-describedby="email-error email-help"
-                               placeholder="your.email@example.com">
-                        <span id="email-help" class="sr-only">We'll use this to get back to you about your project</span>
-                        <span id="email-error" class="error-message sr-only" role="alert"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="company">Company/Organization</label>
-                        <input type="text" 
-                               id="company" 
-                               name="company" 
-                               aria-describedby="company-help"
-                               placeholder="Your company name">
-                        <span id="company-help" class="sr-only">Optional: Tell us about your organization</span>
-                    </div>
-                    <div class="form-group">
-                        <label for="project">Project Type</label>
-                        <select id="project" 
-                                name="project"
-                                aria-describedby="project-help">
-                            <option value="">Select project type</option>
-                            <option value="ai-platform">AI Platform Development</option>
-                            <option value="cloud-migration">Cloud Migration</option>
-                            <option value="devops-automation">DevOps & Automation</option>
-                            <option value="platform-engineering">Platform Engineering</option>
-                            <option value="product-strategy">Product Strategy</option>
-                            <option value="technical-consulting">Technical Consulting</option>
-                            <option value="other">Other</option>
-                        </select>
-                        <span id="project-help" class="sr-only">Optional: Help us understand your project type</span>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" 
-                                  name="message" 
-                                  required 
-                                  aria-required="true"
-                                  aria-describedby="message-error message-help"
-                                  rows="4" 
-                                  placeholder="Tell me about your project, challenges, and goals..."></textarea>
-                        <span id="message-help" class="sr-only">Describe your project, challenges, and what you'd like to achieve</span>
-                        <span id="message-error" class="error-message sr-only" role="alert"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="timeline">Preferred Timeline</label>
-                        <select id="timeline" 
-                                name="timeline"
-                                aria-describedby="timeline-help">
-                            <option value="">Select timeline</option>
-                            <option value="asap">ASAP</option>
-                            <option value="1-2-weeks">1-2 weeks</option>
-                            <option value="1-month">Within 1 month</option>
-                            <option value="2-3-months">2-3 months</option>
-                            <option value="flexible">Flexible</option>
-                        </select>
-                    </div>
-                    <div class="form-actions">
-                        <button type="button" class="btn btn-secondary" onclick="closeContactModal()">
-                            <span>Cancel</span>
-                        </button>
-                        <button type="submit" class="btn btn-primary" id="submitBtn">
-                            <span>Send Message</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
+<section id="projects">
+  <div class="wrap">
+    <div class="eyebrow rv">Selected work</div>
+    <h2 class="rv">Things I've shipped</h2>
+    <div class="projects">
+      <a class="card proj rv" href="https://patents.google.com/patent/WO2024233807A1" target="_blank" rel="noopener"><div class="k grad">40%</div><h3>AI Regulatory Automation ↗</h3><p>Agentic-AI platform that generates regulatory documentation. Patent WO2024233807A1.</p><div class="tags"><span>Python</span><span>MCP</span><span>Kubernetes</span></div></a>
+      <div class="card proj rv" style="--d:.08s"><div class="k grad">99.9%</div><h3>Multi-Cloud Migration</h3><p>On-prem to AWS + Azure with 30% lower cost and 99.9% uptime.</p><div class="tags"><span>AWS</span><span>Azure</span><span>Terraform</span></div></div>
+      <div class="card proj rv" style="--d:.16s"><div class="k grad">1000+</div><h3>Multi-Tenant SaaS</h3><p>Built from scratch for 1000+ enterprise customers.</p><div class="tags"><span>Node.js</span><span>React</span><span>Postgres</span></div></div>
+      <div class="card proj rv" style="--d:.24s"><div class="k grad">60%</div><h3>Monolith → Microservices</h3><p>15-year-old system modernised: 60% faster, 80% quicker deploys.</p><div class="tags"><span>Docker</span><span>API Gateway</span><span>Events</span></div></div>
     </div>
 
-    <!-- Detailed Information Modals -->
-    
-    <!-- What I Do Modal -->
-    <div id="what-i-do-modal" class="details-modal-overlay">
-        <div class="details-modal-container">
-            <div class="details-modal-header">
-                <h3><i class="fas fa-target"></i> What I Do - Detailed Overview</h3>
-                <button class="details-modal-close" aria-label="Close modal">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="details-modal-content">
-                <div class="modal-section">
-                    <h4><i class="fas fa-chart-line"></i> Product Strategy & Roadmapping</h4>
-                    <p>As a Technical Product Manager, I bridge the gap between complex technical capabilities and strategic business objectives:</p>
-                    <ul>
-                        <li><strong>Technical Vision Translation:</strong> Convert engineering possibilities into market opportunities and user value propositions</li>
-                        <li><strong>Stakeholder Alignment:</strong> Facilitate communication between engineering teams, business units, and executive leadership</li>
-                        <li><strong>Data-Driven Decisions:</strong> Leverage analytics, user research, and market intelligence to prioritize features and initiatives</li>
-                        <li><strong>Agile Methodologies:</strong> Implement Scrum, Kanban, and SAFe frameworks for efficient product delivery</li>
-                        <li><strong>ROI Optimization:</strong> Ensure every technical investment delivers measurable business value and competitive advantage</li>
-                    </ul>
-                </div>
-                
-                <div class="modal-section">
-                    <h4><i class="fas fa-cogs"></i> Platform Engineering Excellence</h4>
-                    <p>Deep technical expertise in building and scaling modern infrastructure platforms:</p>
-                    <ul>
-                        <li><strong>Kubernetes Orchestration:</strong> Design custom operators and controllers for automated workload management</li>
-                        <li><strong>Infrastructure as Code:</strong> Terraform-based provisioning with GitOps workflows for consistent, repeatable deployments</li>
-                        <li><strong>Microservices Architecture:</strong> Event-driven systems using Kafka, API gateways, and service mesh (Istio) implementations</li>
-                        <li><strong>Cloud-Native Solutions:</strong> Multi-cloud strategies across AWS, Azure, and GCP with vendor-agnostic approaches</li>
-                        <li><strong>DevOps Culture:</strong> Foster continuous integration/deployment practices with ArgoCD, Jenkins, and GitHub Actions</li>
-                    </ul>
-                </div>
-                
-                <div class="modal-section">
-                    <h4><i class="fas fa-users"></i> Cross-Functional Leadership</h4>
-                    <p>Leading diverse teams and driving organizational transformation through technical innovation:</p>
-                    <ul>
-                        <li><strong>Team Building:</strong> Recruit, mentor, and scale high-performing engineering teams across multiple time zones</li>
-                        <li><strong>Technical Mentorship:</strong> Guide junior engineers through complex architectural decisions and career development</li>
-                        <li><strong>Process Innovation:</strong> Implement lean startup methodologies, design thinking, and continuous improvement practices</li>
-                        <li><strong>Risk Management:</strong> Proactive identification and mitigation of technical debt, security vulnerabilities, and scalability bottlenecks</li>
-                        <li><strong>Cultural Change:</strong> Champion best practices in code review, documentation, testing, and knowledge sharing</li>
-                    </ul>
-                </div>
-                
-                <div class="modal-section">
-                    <h4><i class="fas fa-brain"></i> AI & Innovation Strategy</h4>
-                    <p>Pioneering artificial intelligence integration and emerging technology adoption:</p>
-                    <ul>
-                        <li><strong>AI Platform Development:</strong> Design and implement ML pipelines, model serving infrastructure, and automated training workflows</li>
-                        <li><strong>Patent Development:</strong> Inventor on US WIPO PCT Patent WO2024233807A1 for AI-powered regulatory automation</li>
-                        <li><strong>Technology Scouting:</strong> Evaluate emerging technologies for strategic advantage and competitive differentiation</li>
-                        <li><strong>Innovation Labs:</strong> Establish rapid prototyping environments for proof-of-concept development and validation</li>
-                        <li><strong>Industry Partnerships:</strong> Collaborate with technology vendors, startups, and research institutions for innovation acceleration</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <div style="height:70px"></div>
+    <div class="eyebrow rv">Education</div>
+    <h2 class="rv">Credentials</h2>
+    <div class="edu">
+      <div class="card rv"><h3>Executive MBA · IIM Kozhikode</h3><small>2022 – 2024</small><p style="color:var(--mut);font-size:.9rem;margin-top:8px">Product Management & Digital Transformation.</p></div>
+      <div class="card rv" style="--d:.08s"><h3>B.Tech Computer Science · MNIT Jaipur</h3><small>2013 – 2017</small><p style="color:var(--mut);font-size:.9rem;margin-top:8px">CS fundamentals, software engineering, system design.</p></div>
+      <div class="card rv" style="--d:.16s"><h3>Certifications</h3><div class="tags"><span>SAS Data Scientist</span><span>SAS Big Data</span><span>INFORMS CAP</span><span>NSE Financial Markets</span><span>Google Analytics</span></div></div>
     </div>
+  </div>
+</section>
 
-    <!-- Current Focus Modal -->
-    <div id="current-focus-modal" class="details-modal-overlay">
-        <div class="details-modal-container">
-            <div class="details-modal-header">
-                <h3><i class="fas fa-lightbulb"></i> Current Focus - Cutting-Edge Technologies</h3>
-                <button class="details-modal-close" aria-label="Close modal">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="details-modal-content">
-                <div class="modal-section highlight">
-                    <h4><i class="fas fa-robot"></i> Agentic AI Systems & MCP Integration</h4>
-                    <p>Pioneering the next generation of intelligent automation through advanced AI agent architectures:</p>
-                    <ul>
-                        <li><strong>Model Context Protocol (MCP) Servers:</strong> Building standardized interfaces for AI agents to interact with external systems and data sources</li>
-                        <li><strong>Multi-Agent Orchestration:</strong> Designing collaborative AI systems where specialized agents work together to solve complex problems</li>
-                        <li><strong>Regulatory Automation:</strong> Applying AI agents to automate compliance workflows, documentation generation, and regulatory reporting</li>
-                        <li><strong>Intelligent Workflows:</strong> Creating self-adapting business processes that learn and optimize through continuous feedback loops</li>
-                        <li><strong>Human-AI Collaboration:</strong> Developing interfaces and protocols for seamless human-agent interaction in professional environments</li>
-                    </ul>
-                    <div class="tech-stack">
-                        <strong>Technologies:</strong> LangChain, OpenAI GPT-4, Anthropic Claude, Temporal, Redis, Vector Databases
-                    </div>
-                </div>
-                
-                <div class="modal-section highlight">
-                    <h4><i class="fas fa-sync-alt"></i> GitOps & Advanced Automation</h4>
-                    <p>Implementing next-generation DevOps practices for enterprise-scale reliability and efficiency:</p>
-                    <ul>
-                        <li><strong>ArgoCD Advanced Patterns:</strong> Multi-cluster management with application sets, progressive delivery, and automated rollbacks</li>
-                        <li><strong>Temporal Workflows:</strong> Building durable, fault-tolerant business logic with complex orchestration requirements</li>
-                        <li><strong>Kubernetes Operators:</strong> Creating custom controllers for automated database management, backup strategies, and security policy enforcement</li>
-                        <li><strong>Policy as Code:</strong> Implementing Open Policy Agent (OPA) for governance, compliance, and security automation</li>
-                        <li><strong>Observability Engineering:</strong> Advanced monitoring with Prometheus, Grafana, Jaeger, and custom SLI/SLO implementations</li>
-                    </ul>
-                    <div class="tech-stack">
-                        <strong>Technologies:</strong> ArgoCD, Temporal, Kubernetes Operators, OPA Gatekeeper, Prometheus, Grafana
-                    </div>
-                </div>
-                
-                <div class="modal-section highlight">
-                    <h4><i class="fas fa-cloud"></i> Multi-Cloud Excellence & Platform Engineering</h4>
-                    <p>Architecting resilient, vendor-agnostic solutions across diverse cloud ecosystems:</p>
-                    <ul>
-                        <li><strong>Cloud Abstraction Layers:</strong> Building platform APIs that abstract vendor-specific implementations for portability</li>
-                        <li><strong>Cost Optimization:</strong> Implementing FinOps practices with automated resource rightsizing and intelligent workload placement</li>
-                        <li><strong>Disaster Recovery:</strong> Cross-cloud backup strategies, automated failover mechanisms, and business continuity planning</li>
-                        <li><strong>Edge Computing:</strong> Hybrid architectures that extend cloud capabilities to edge locations and IoT devices</li>
-                        <li><strong>Compliance Automation:</strong> Automated security scanning, vulnerability management, and regulatory compliance monitoring</li>
-                    </ul>
-                    <div class="tech-stack">
-                        <strong>Technologies:</strong> Terraform, Pulumi, Crossplane, AWS EKS, Azure AKS, GCP GKE, Istio Service Mesh
-                    </div>
-                </div>
-                
-                <div class="modal-section">
-                    <h4><i class="fas fa-graduation-cap"></i> Continuous Learning & Research</h4>
-                    <p>Staying at the forefront of technological innovation through active research and development:</p>
-                    <ul>
-                        <li><strong>Academic Collaboration:</strong> Partnerships with research institutions for exploring emerging AI methodologies</li>
-                        <li><strong>Open Source Contribution:</strong> Contributing to major projects like Kubernetes, ArgoCD, and Temporal</li>
-                        <li><strong>Conference Speaking:</strong> Sharing insights at industry conferences on AI, platform engineering, and product management</li>
-                        <li><strong>Patent Research:</strong> Continuing innovation in AI automation with additional patent applications in progress</li>
-                        <li><strong>Mentorship Programs:</strong> Teaching and guiding the next generation of technical product managers</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="card rv">
+      <div class="eyebrow">Contact</div>
+      <h2>Let's build something <span class="grad">great</span></h2>
+      <p>AI platforms, modernisation or product leadership. I'd love to hear about it.</p>
+      <div class="cta">
+        <a class="btn p" href="mailto:mukund.jangid95@gmail.com">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/mukund-j-b01847b1/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="https://github.com/mjangid7" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
     </div>
+  </div>
+</section>
+<footer>© <span id="yr"></span> Mukund Jangid</footer>
 
-    <!-- Key Achievements Modal -->
-    <div id="key-achievements-modal" class="details-modal-overlay">
-        <div class="details-modal-container">
-            <div class="details-modal-header">
-                <h3><i class="fas fa-trophy"></i> Key Achievements & Impact - Detailed Results</h3>
-                <button class="details-modal-close" aria-label="Close modal">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="details-modal-content">
-                <div class="modal-section highlight">
-                    <h4><i class="fas fa-certificate"></i> US WIPO PCT Patent - AI Regulatory Automation</h4>
-                    <div class="achievement-details">
-                        <p><strong>Patent Number:</strong> WO2024233807A1 - "Method of generating regulatory outputs"</p>
-                        <p><strong>Innovation Impact:</strong> Revolutionary approach to automated regulatory documentation using agentic AI systems</p>
-                        <p><strong>Technical Breakthrough:</strong> Developed novel algorithms that reduced manual regulatory compliance work by 40% while improving accuracy by 95%</p>
-                        <div class="patent-metrics">
-                            <div class="metric-card">
-                                <span class="metric-value">40%</span>
-                                <span class="metric-label">Reduction in Manual Work</span>
-                            </div>
-                            <div class="metric-card">
-                                <span class="metric-value">95%</span>
-                                <span class="metric-label">Accuracy Improvement</span>
-                            </div>
-                            <div class="metric-card">
-                                <span class="metric-value">$2M+</span>
-                                <span class="metric-label">Cost Savings Annually</span>
-                            </div>
-                        </div>
-                        <p><strong>Commercial Application:</strong> Implemented at Albert Invent for chemical safety documentation, now serving 100+ enterprise clients</p>
-                        <p><strong>Future Potential:</strong> Patent applications pending for extensions into pharmaceutical and automotive regulatory domains</p>
-                    </div>
-                </div>
-                
-                <div class="modal-section highlight">
-                    <h4><i class="fas fa-clock"></i> Infrastructure Automation Excellence</h4>
-                    <div class="achievement-details">
-                        <p><strong>Challenge:</strong> Enterprise cloud provisioning taking 2+ days with high error rates and manual bottlenecks</p>
-                        <p><strong>Solution:</strong> Designed custom Kubernetes operators and Infrastructure as Code pipelines</p>
-                        <div class="before-after">
-                            <div class="before">
-                                <h5>Before Automation</h5>
-                                <ul>
-                                    <li>2+ days provisioning time</li>
-                                    <li>45% failure rate</li>
-                                    <li>Manual configuration drift</li>
-                                    <li>Limited scalability</li>
-                                </ul>
-                            </div>
-                            <div class="after">
-                                <h5>After Implementation</h5>
-                                <ul>
-                                    <li>2 hours provisioning time</li>
-                                    <li>2% failure rate</li>
-                                    <li>Automated drift detection</li>
-                                    <li>Auto-scaling capabilities</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <p><strong>Technologies Used:</strong> Go, Kubernetes Operators, Terraform, ArgoCD, Azure DevOps</p>
-                        <p><strong>Business Impact:</strong> Enabled 300% faster product delivery cycles and reduced infrastructure costs by 35%</p>
-                    </div>
-                </div>
-                
-                <div class="modal-section highlight">
-                    <h4><i class="fas fa-shield-alt"></i> Enterprise-Grade Reliability</h4>
-                    <div class="achievement-details">
-                        <p><strong>Reliability Achievement:</strong> Maintained 99.9%+ uptime across multiple enterprise platforms serving millions of users</p>
-                        <div class="reliability-metrics">
-                            <div class="metric-card">
-                                <span class="metric-value">99.95%</span>
-                                <span class="metric-label">Average Uptime</span>
-                            </div>
-                            <div class="metric-card">
-                                <span class="metric-value">< 30s</span>
-                                <span class="metric-label">Mean Recovery Time</span>
-                            </div>
-                            <div class="metric-card">
-                                <span class="metric-value">Zero</span>
-                                <span class="metric-label">Data Loss Incidents</span>
-                            </div>
-                        </div>
-                        <p><strong>Key Strategies:</strong></p>
-                        <ul>
-                            <li>Implemented chaos engineering practices with Netflix's Chaos Monkey</li>
-                            <li>Designed automated circuit breakers and graceful degradation</li>
-                            <li>Established comprehensive monitoring with custom SLI/SLO frameworks</li>
-                            <li>Created runbook automation for incident response</li>
-                        </ul>
-                        <p><strong>Industry Recognition:</strong> Platform reliability practices adopted as company-wide standards across Fortune 500 clients</p>
-                    </div>
-                </div>
-                
-                <div class="modal-section highlight">
-                    <h4><i class="fas fa-sync"></i> Legacy Modernization Success</h4>
-                    <div class="achievement-details">
-                        <p><strong>Modernization Portfolio:</strong> Successfully led 3+ major platform transformations across different industries</p>
-                        <div class="modernization-projects">
-                            <div class="project-card">
-                                <h5>Financial Services Platform</h5>
-                                <p>Transformed 15-year-old monolith to microservices architecture</p>
-                                <span class="result">60% performance improvement, 80% faster deployments</span>
-                            </div>
-                            <div class="project-card">
-                                <h5>Healthcare Data Platform</h5>
-                                <p>Migrated legacy ETL processes to cloud-native streaming architecture</p>
-                                <span class="result">Real-time processing, HIPAA compliance, 50% cost reduction</span>
-                            </div>
-                            <div class="project-card">
-                                <h5>Manufacturing IoT Platform</h5>
-                                <p>Replaced proprietary systems with open-source Kubernetes-based solution</p>
-                                <span class="result">99.9% uptime, edge computing capabilities, vendor independence</span>
-                            </div>
-                        </div>
-                        <p><strong>Methodology:</strong> Strangler Fig pattern implementation with zero-downtime migrations and comprehensive testing strategies</p>
-                    </div>
-                </div>
-                
-                <div class="modal-section">
-                    <h4><i class="fas fa-users"></i> Team Leadership & Organizational Impact</h4>
-                    <div class="achievement-details">
-                        <p><strong>Team Growth:</strong> Built and scaled engineering teams from 5 to 50+ members across multiple organizations</p>
-                        <p><strong>Process Improvements:</strong> Introduced agile methodologies reducing project delivery time by 40%</p>
-                        <p><strong>Knowledge Transfer:</strong> Established technical documentation and training programs adopted company-wide</p>
-                        <p><strong>Industry Influence:</strong> Published thought leadership articles with 10K+ reads and spoke at 15+ technology conferences</p>
-                        <div class="leadership-metrics">
-                            <div class="metric-card">
-                                <span class="metric-value">95%</span>
-                                <span class="metric-label">Team Retention Rate</span>
-                            </div>
-                            <div class="metric-card">
-                                <span class="metric-value">40%</span>
-                                <span class="metric-label">Faster Delivery</span>
-                            </div>
-                            <div class="metric-card">
-                                <span class="metric-value">25+</span>
-                                <span class="metric-label">Engineers Mentored</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </main>
-
-    <script src="assets/js/page-navigation.js"></script>
-    <script src="assets/js/lazy-loading.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/redis-integration.js"></script>
-    <script src="assets/js/modal-system.js"></script>
+<script>
+(()=>{
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+$('#yr').textContent=new Date().getFullYear();
+// theme
+const root=document.documentElement;
+try{const t=localStorage.getItem('theme');if(t)root.dataset.theme=t}catch(e){}
+$('#theme').onclick=()=>{const t=root.dataset.theme==='dark'?'light':'dark';root.dataset.theme=t;try{localStorage.setItem('theme',t)}catch(e){}};
+// typewriter
+const words=['Technical Product Manager','AI Strategist','Platform Engineer','Patent Holder'];
+const el=$('#type');let w=0,i=0,del=false;
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+if(reduce)el.textContent=words[0];else(function tick(){
+  const cur=words[w];el.textContent=cur.slice(0,i);
+  if(!del&&i===cur.length){del=true;return setTimeout(tick,1400)}
+  if(del&&i===0){del=false;w=(w+1)%words.length}
+  i+=del?-1:1;setTimeout(tick,del?35:70);
+})();
+// reveal + counters
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+$$('.rv').forEach(e=>io.observe(e));
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);
+  const t=e.target,n=+t.dataset.n,s=t.dataset.s,p=t.textContent.startsWith('$')?'$':'';
+  if(reduce){t.textContent=p+n+s;return}
+  const st=performance.now();(function f(now){const k=Math.min((now-st)/1400,1);t.textContent=p+Math.round(n*(1-Math.pow(1-k,3)))+(k<1?'':s);if(k<1)requestAnimationFrame(f)})(st);
+}),{threshold:.6});
+$$('[data-n]').forEach(e=>co.observe(e));
+// card spotlight
+$$('.card').forEach(c=>c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--mx',e.clientX-r.left+'px');c.style.setProperty('--my',e.clientY-r.top+'px')}));
+// progress + active nav
+const links=$$('nav a[href^="#"]'),secs=links.map(a=>$(a.getAttribute('href')));
+addEventListener('scroll',()=>{
+  const h=document.documentElement;$('#progress').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';
+  let idx=0;secs.forEach((s,k)=>{if(s.getBoundingClientRect().top<innerHeight*.4)idx=k});
+  links.forEach((a,k)=>a.classList.toggle('on',k===idx));
+},{passive:true});
+})();
+</script>
 </body>
 </html>
